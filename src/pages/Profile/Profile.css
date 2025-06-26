@@ -1,0 +1,174 @@
+.profile-hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-overlay {
+  width: 100%;
+  background: rgba(0, 20, 30, 0.7); /* dark overlay */
+  padding: 4rem 2rem;
+}
+
+.hero-content {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bio-text {
+  flex: 1;
+  color: #ffffff;
+  max-width: 700px;
+}
+
+.bio-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.green-line {
+  width: 60px;
+  height: 4px;
+  background-color: #7d1aff;
+  margin-bottom: 1rem;
+}
+
+.bio-text p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.bio-image img {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bio-text {
+    max-width: 100%;
+  }
+
+  .bio-image img {
+    margin-top: 2rem;
+  }
+}
+
+.profile-full-card {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.profile-full-card h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.profile-full-card h3 {
+  color: green;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.cv-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: #c00;
+  font-weight: bold;
+}
+
+.profile-contact {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+.contact-text p {
+  margin: 0.25rem 0;
+  white-space: pre-line;
+}
+
+.section {
+  margin-top: 2rem;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  border-left: 3px solid #7d1aff;
+  padding-left: 0.5rem;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 80px 1fr 100px;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.entry.single-line {
+  grid-template-columns: 1fr 100px;
+}
+
+.left {
+  color: #7d1aff;
+  font-weight: bold;
+}
+
+.right {
+  text-align: right;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.middle {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .profile-contact {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .entry {
+    grid-template-columns: 1fr;
+  }
+
+  .entry .right {
+    text-align: left;
+    margin-top: 0.25rem;
+  }
+
+  .left {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,185 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+    background-color: black;
+    min-height: 80vh;
+    gap: 1rem;
+    /* background-image: url('../../assets/images/proteinstructure.png'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 1;
+}
+
+.slideshow-background {
+  transition: opacity 0.1s ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 80vh;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+
+.grid-image {
+    /* background-color: black; */
+    /* background-image: url('../../assets/images/proteinstructure.png');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    max-width: 100%;
+    z-index: 1;
+}
+
+.grid-text {
+    /* background-color: black; */
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    z-index: 1;
+}
+
+.header {
+    font-weight: 500;
+    font-size: xx-large;
+    max-width: auto;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.2s;
+    text-align: 'center';
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+.para {
+    font-size: x-large;
+    justify-self: center;
+    max-width: auto;
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 0.4s;
+}
+
+.glass-button {
+    position: relative;
+    padding: 0.75rem 1.8rem;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* ⬅ adds space between text and arrow */
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.glass-button .arrow {
+    opacity: 0;
+    transform: translateX(-5px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.glass-button:hover .arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.recent-publications {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 40vh;
+    gap: 5rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    z-index: 1;
+    background-image: url('../../assets/images/publiback.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.publications {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.publications:hover .card {
+  filter: blur(4px);
+  transition: filter 0.5s ease;
+}
+
+.card {
+  transition: transform 0.5s ease; /* Smooth scale */
+}
+.card:hover {
+  filter: none !important;
+  z-index: 1;
+  transform: scale(1.1);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        /* optional slide-up effect */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .para {
+    font-size: large;        /* reduce font size for small screens */
+    text-align: center;      /* optional: center text for better UX */
+    padding: 0 1rem;         /* optional: add padding */
+    max-width: 90vw;         /* optional: limit max width */
+  }
+
+  .header {
+    font-weight: 500;
+    font-size: x-large;
+    max-width: auto;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.2s;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+}

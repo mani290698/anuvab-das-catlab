@@ -1,0 +1,17 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #F6f6f2;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  z-index: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 20px;
+}

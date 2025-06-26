@@ -1,0 +1,41 @@
+.research-tile {
+  background-color: #f9f9f4;
+  border-radius: 15px;
+  padding: 1.5rem;
+  max-width: 300px;
+  min-height: 320px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  align-items: flex-start;
+  font-family: sans-serif;
+  color: #222;
+}
+
+.tile-image {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.tile-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.tile-authors,
+.tile-journal {
+  font-size: 0.9rem;
+  margin: 0.2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.tile-journal strong {
+  color: #1d4ed8; /* blue link color */
+}
+
+/* Optional: FontAwesome Icons if using */
+.fas {
+  color: #555;
+}
