@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a33f38f4.css",
+    "main.js": "/static/js/main.1d244fe1.js",
+    "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
+    "static/media/publiback.jpg": "/static/media/publiback.706ed71332917131242c.jpg",
+    "static/media/proteinstructure.png": "/static/media/proteinstructure.32c4c393253b54d5a5de.png",
+    "static/media/lablogo1.png": "/static/media/lablogo1.6d445817fc1d7219d801.png",
+    "static/media/lablogo.jpg": "/static/media/lablogo.3371e59adf59e6c2de6a.jpg",
+    "static/media/protein.jpg": "/static/media/protein.a2915d9a6309a1e16ee4.jpg",
+    "static/media/jpggg.webp": "/static/media/jpggg.e0cac938be1d5ffbbfb9.webp",
+    "index.html": "/index.html",
+    "main.a33f38f4.css.map": "/static/css/main.a33f38f4.css.map",
+    "main.1d244fe1.js.map": "/static/js/main.1d244fe1.js.map",
+    "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a33f38f4.css",
+    "static/js/main.1d244fe1.js"
+  ]
+}
