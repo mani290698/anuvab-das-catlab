@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a33f38f4.css",
-    "main.js": "/static/js/main.1d244fe1.js",
+    "main.js": "/static/js/main.12aa6750.js",
     "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
     "static/media/publiback.jpg": "/static/media/publiback.706ed71332917131242c.jpg",
     "static/media/proteinstructure.png": "/static/media/proteinstructure.32c4c393253b54d5a5de.png",
@@ -11,11 +11,11 @@
     "static/media/jpggg.webp": "/static/media/jpggg.e0cac938be1d5ffbbfb9.webp",
     "index.html": "/index.html",
     "main.a33f38f4.css.map": "/static/css/main.a33f38f4.css.map",
-    "main.1d244fe1.js.map": "/static/js/main.1d244fe1.js.map",
+    "main.12aa6750.js.map": "/static/js/main.12aa6750.js.map",
     "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a33f38f4.css",
-    "static/js/main.1d244fe1.js"
+    "static/js/main.12aa6750.js"
   ]
 }
