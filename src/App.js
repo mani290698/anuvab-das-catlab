@@ -1,5 +1,5 @@
 import { React, useEffect } from "react";
-import { BrowserRouter as Router, useLocation } from "react-router-dom";
+import { BrowserRouter  as Router, useLocation } from "react-router-dom";
 import AppRouter from "./routes/AppRouter.jsx";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import './App.css'; 
@@ -10,7 +10,6 @@ function App() {
       <Router>
         <PageTransition />
       </Router>
-  
   );
 }
 

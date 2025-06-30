@@ -1,4 +1,4 @@
-import {HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home/Home';
 import Contact from '../pages/Contact/Contact';
 import Team from '../pages/Team/Team';
@@ -8,7 +8,6 @@ import FullProfile from '../pages/Profile/Profile';
 
 function AppRouter({ location }) {
   return (
-    <Router>
     <Routes location={location}>
       <Route path="/" element={<Home />} />
       <Route path="/contact" element={<Contact />} />
@@ -17,7 +16,6 @@ function AppRouter({ location }) {
       <Route path="/publications" element={<Publications />} />
        <Route path="/anuvab" element={<FullProfile />} />
     </Routes>
-    </Router>
   );
 }
 
