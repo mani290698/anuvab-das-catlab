@@ -1,45 +1,33 @@
+.whole-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #F6f6f2;
+  color: black;
+  padding: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.ntu-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #F6f6f2;
-  color: black;
-  text-align: center;
-  padding: 1rem;
-  z-index: 0;
-  justify-content: center;
-  align-items: center;
+  flex: 6;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   flex-wrap: wrap;
-  flex-direction: column; /* row on desktop */
+  text-align: left;
 }
 
-.footer-ntu{
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #F6f6f2;
-  color: black;
-  text-align: center;
-  padding: 1rem;
-  z-index: 0;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column; /* row on desktop */
-  margin-top: 20px;
-}
-.footer-grid{
-    display: flex;
-  flex-wrap: wrap;
-  flex-direction: row; 
+.footer-text {
+  margin-left: 1rem;
 }
 
-@media (max-width: 768px) {
-  .footer {
-    flex-direction: column; /* stack on phones */
-  }
-}
+/* Responsive: Stack everything vertically on small screens */
