@@ -1,19 +1,23 @@
+/* Base link styling */
 .navbar-nav .nav-link {
   position: relative;
   color: white !important;
   text-decoration: none;
   padding: 3px;
 }
+
+/* Glass-effect navbar */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1030; /* Bootstrap default navbar z-index */
-background-color: rgba(0, 0, 0, 0.096); /* light transparent */
-  backdrop-filter: blur(7px);               /* glass effect */
-  -webkit-backdrop-filter: blur(5px);       /* Safari support */
+  z-index: 1030;
+  background-color: rgba(0, 0, 0, 0.096);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
+/* Animated underline effect on hover */
 .navbar-nav .nav-link::after {
   content: "";
   position: absolute;
@@ -29,11 +33,12 @@ background-color: rgba(0, 0, 0, 0.096); /* light transparent */
   width: 100%;
 }
 
-/* Fix: Remove underline for dropdown toggle unless hovered */
+/* Prevent dropdown toggle arrow from affecting underline */
 .navbar-nav .dropdown-toggle::after {
   content: none !important;
 }
 
+/* Add custom underline on dropdown hover */
 .navbar-nav .dropdown-toggle:hover::before {
   content: "";
   position: absolute;
@@ -43,4 +48,26 @@ background-color: rgba(0, 0, 0, 0.096); /* light transparent */
   left: 0;
   background-color: white;
   border-radius: 40px;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.85); /* dark background */
+  border: none;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  padding: 0.5rem 0;
+}
+
+/* Dropdown item */
+.dropdown-menu .dropdown-item {
+  color: white;
+  padding: 10px 20px;
+  transition: background 0.3s ease;
+}
+
+/* Hover effect for items */
+.dropdown-menu .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
 }

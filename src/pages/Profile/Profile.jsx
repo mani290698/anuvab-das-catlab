@@ -1,53 +1,53 @@
 import React from "react";
 import "./Profile.css";
 import proteinImg from '../../assets/images/protein.jpg';
+import headshot from '../../assets/images/Headshot.jpg';
+// import Cv from '../../data/CV.pdf';
 
 const FullProfile = () => {
     const profile = {
         name: "Anuvab Das",
-        title: "Professor of Chemistry",
-        email: "thyster@princeton.edu",
+        title: "Assistant Professor of Chemistry",
+        email: "anuvab.das@ntu.edu.sg",
         phone: "609-258-5042",
-        location: "Frick Chemistry Laboratory, 285\nDepartment of Chemistry\nPrinceton, NJ 08544",
-        pronouns: "he/him",
-        cvLink: "#",
+        location: "School of Chemistry, Chemical Engineering & Biotechnology, Nanyang Technological University",
+        cvLink: "",
         education: [
             {
                 label: "Postdoc.",
                 institution: "California Institute of Technology",
-                description: "NIH-NRSA Postdoctoral Fellow",
+                // description: "NIH-NRSA Postdoctoral Fellow",
                 advisor: "Frances H. Arnold",
-                year: "2013 – 2015",
+                year: "2021-2024",
             },
             {
                 label: "Ph.D.",
-                institution: "Colorado State University",
+                institution: "Texas A&M University",
                 advisor: "Tomislav Rovis",
-                year: "2008 – 2013",
+                year: "2015-2020",
             },
             {
-                label: "",
-                institution: "University of Basel",
-                description: "Marie Curie Fellow",
-                advisor: "Thomas R. Ward",
-                year: "",
+                label: "M.Sc.",
+                institution: "IIT Kharagpur",
+                // description: "Marie Curie Fellow",
+                advisor: "Prof. Jayanta K. Ray",
+                year: "2013-2015",
             },
             {
-                label: "B.S.",
-                institution: "University of Minnesota, Twin Cities",
-                advisor: "Christopher Douglas",
-                year: "2005 – 2008",
+                label: "B.Sc.",
+                institution: "Presidency College",
+                advisor: "Prof. Abhishek Dey",
+                year: "2010-2013",
             },
         ],
         experience: [
-            { role: "Professor of Chemistry", institution: "Princeton University", year: "2023 – Present" },
-            { role: "Associate Professor of Chemistry and Chemical Biology", institution: "Cornell University", year: "2021 – 2023" },
-            { role: "Assistant Professor of Chemistry", institution: "Princeton University", year: "2015 – 2020" },
+            { role: "Assistant Professor", institution: "Nanyang Technological University", year: "2025-present" },
         ],
         awards: [
-            { name: "National Fresenius Award", year: "2023" },
-            { name: "Mitsui Catalysis Science Award for Creative Work", year: "2022" },
-            { name: "Buck-Whitney Award", year: "2022" },
+            { name: "Reaxys PhD Prize Finalist", year: "2020" },
+            { name: "70 th Lindau Nobel Laureate Meeting", year: "2020" },
+            { name: "Dr. Judith Edmiston Mentoring Award", year: "2020" },
+            { name: "Martin Donald Corera Memorial Endowed Fund", year: "2019" },
         ]
     };
 
@@ -55,14 +55,34 @@ const FullProfile = () => {
         <div>
             <div
                 className="profile-hero"
-                style={{ backgroundImage: `url(${proteinImg})` }}
+            // style={{ backgroundImage: `url(${proteinImg})` }}
             >
                 <div className="hero-overlay">
                     <div className="hero-content">
+                        <div style={{ opacity: "0.8", display: "flex", flexDirection: "column", alignItems: "center" }}>
+                            <div>
+                                <img src={headshot} alt="Princeton" className="logo" />
+                            </div>
+                            <br></br>
+                            <div style={{ display: "flex", flexDirection: "column", gap: "15px", marginTop: "10px", justifyContent: "center" }}>
+                               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                                    <i className="fab fa-twitter" style={{ fontSize: "24px", color: "#000000" }}></i>
+                                    <span>@anuvab_chem</span>
+                                </div>
+                                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                                    <i className="fab fa-instagram" style={{ fontSize: "24px", color: "#000000" }}></i>
+                                    <span>@anuvab_chem</span>
+                                </div>
+                                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                                    <i className="fas fa-envelope" style={{ fontSize: "24px", color: "#000000" }}></i>
+                                    <span>@anuvab_chem</span>
+                                </div>
+                            </div>
+                        </div>
                         <div className="bio-text">
                             <h1>Anuvab Das</h1>
                             <div className="green-line" />
-                            <p>
+                            <p style={{}}>
                                 Born and raised in Kolkata, Anuvab obtained his B.Sc. degree from Presidency College in
                                 2013. During his undergraduate studies, he gained his first research experience in Prof.
                                 Abhishek Dey’s lab at the Indian Association for the Cultivation of Science, where he studied
@@ -85,24 +105,13 @@ const FullProfile = () => {
                                 at Nanyang Technological University as an Assistant Professor.
                             </p>
                         </div>
+                        {/* <div style={{opacity:"0.7"}}><img src={headshot} alt="Princeton" className="logo" /></div> */}
                     </div>
                 </div>
             </div>
             <div className="profile-full-card">
-                <h1>{profile.name}</h1>
-                <h3>{profile.title}</h3>
-                <a className="cv-link" href={profile.cvLink}>📄 Download CV</a>
+                {/* <h3>{profile.title}</h3> */}
 
-                <div className="profile-contact">
-                    <img src={proteinImg} alt="Princeton" className="logo" />
-                    <div className="contact-text">
-                        <p>{profile.location}</p>
-                        <p>
-                            <strong>{profile.phone}</strong> •{" "}
-                            <a href={`mailto:${profile.email}`}>{profile.email}</a> • {profile.pronouns}
-                        </p>
-                    </div>
-                </div>
 
                 <div className="section">
                     <h2>Education</h2>
@@ -141,7 +150,9 @@ const FullProfile = () => {
                         </div>
                     ))}
                 </div>
+                <a className="cv-link" href="/CV.pdf" download>📄 Download CV</a>
             </div>
+
         </div>
     );
 };

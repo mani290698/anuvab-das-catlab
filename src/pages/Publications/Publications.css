@@ -1,77 +1,146 @@
-.publication-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
-  background-color: black;
-  min-height: 30vh;
-  gap: 1rem;
-  background-image: url('../../assets/images/proteinstructure.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
+  .publication-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+    min-height: 50vh;
+    gap: 1rem;
+    background-image: url('../../assets/images/BG1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* background-position-y: -15rem; */
+  }
 
-.all-publications {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  min-height: 40vh;
-  gap: 1rem;
-}
+  .all-publications {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 40vh;
+    gap: 1rem;
+    margin: 10px;
+  }
 
-.publication-card {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  min-height: 40vh;
-  gap: 3rem;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  z-index: 1;
-  transition: transform 0.5s ease;  
-}
+  .mentored-line{
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    margin-bottom: 1rem;
+  }
 
-.publication-card:hover{
-  filter: none !important;
-  z-index: 1;
-  transform: scale(1.1);
-}
+  .publication-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 40vh;
+    gap: 3rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    z-index: 1;
+    transition: transform 0.5s ease;  
+  }
 
-.publication-desc {
-  width: 80%;
-  max-width: 800px;
-  min-height: 30vh;
-  border-radius: 10px;
-  color: black;
-  padding: 5px;
-  text-align: left;
-  line-height: 2;
-  font-size: large;
-}
+  .publication-card:hover{
+    filter: none !important;
+    z-index: 1;
+    transform: scale(1.1);
+  }
 
-.publication-header {
-  font-weight: 500;
-  font-size: xx-large;
-  max-width: auto;
-  animation: fadeIn 1s ease-in-out forwards;
-  animation-delay: 0.2s;
-  text-align: 'center';
-  margin-top: 70px;
-  align-items: center;
-  justify-content: center;
-}
+  .header.mentored-header {
+    width: 100%;            /* Full width of the container */
+    text-align: left;       /* Align text to the left */
+    padding-left: 20px;     /* Optional: adds spacing from the edge */
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
 
-.publication-section {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  min-height: 40vh;
-  gap: 1rem;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  padding-bottom: 20px;
-  margin-top: 20px;
-  z-index: 1;
+
+  .publication-desc {
+    width: 80%;
+    max-width: 800px;
+    min-height: 30vh;
+    border-radius: 10px;
+    color: black;
+    padding: 5px;
+    text-align: left;
+    line-height: 2;
+    font-size: large;
+  }
+
+  .publication-header {
+    font-weight: 500;
+    font-size: xx-large;
+    max-width: auto;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.2s;
+    text-align: 'center';
+    margin-top: 70px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .publication-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 40vh;
+    gap: 1rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    z-index: 1;
+  }
+
+  @media only screen and (max-width: 768px) {
+  .publication-grid {
+    grid-template-columns: 1fr;
+    background-attachment: scroll; /* Prevent fixed background issues on mobile */
+    background-position: center;
+    padding: 1rem;
+  }
+
+  .publication-desc {
+    width: 100%;
+    font-size: medium;
+    padding: 10px;
+  }
+
+  .publication-card {
+    flex-direction: column;
+    gap: 1rem;
+    min-height: auto;
+  }
+
+  .publication-header {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .header.mentored-header {
+    font-size: 1.3rem;
+    padding-left: 10px;
+  }
+
+  .all-publications {
+    gap: 0.5rem;
+    margin: 5px;
+  }
+
+  .mentored-line {
+    height: 2px;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+
+  a {
+    word-break: break-all;
+  }
 }

@@ -13,12 +13,13 @@
   width: 100%;
   background: rgba(0, 20, 30, 0.7); /* dark overlay */
   padding: 4rem 2rem;
+  top: 0%;
 }
 
 .hero-content {
   display: flex;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 10px auto;
   gap: 2rem;
   align-items: center;
   justify-content: space-between;
@@ -72,7 +73,7 @@
 
 .profile-full-card {
   max-width: 900px;
-  margin: auto;
+  margin: 0 auto;
   padding: 2rem;
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -84,7 +85,7 @@
 }
 
 .profile-full-card h3 {
-  color: green;
+  color: black;
   font-weight: 400;
   margin-top: 0;
 }
@@ -95,6 +96,9 @@
   text-decoration: none;
   color: #c00;
   font-weight: bold;
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
 }
 
 .profile-contact {
@@ -107,8 +111,9 @@
 }
 
 .logo {
-  width: 60px;
-  height: auto;
+  max-width: auto;
+  height: 300px;
+  border-radius: 10px;
 }
 
 .contact-text p {

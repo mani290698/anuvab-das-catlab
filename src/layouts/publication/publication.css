@@ -23,7 +23,7 @@
 }
 
 .tile-authors,
-.tile-journal {
+.tile-journal, .tile-date {
   font-size: 0.9rem;
   margin: 0.2rem 0;
   display: flex;
@@ -31,7 +31,7 @@
   gap: 0.4rem;
 }
 
-.tile-journal strong {
+.tile-date strong {
   color: #1d4ed8; /* blue link color */
 }
 

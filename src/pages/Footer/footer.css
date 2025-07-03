@@ -12,6 +12,34 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: column; /* row on desktop */
+}
+
+.footer-ntu{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #F6f6f2;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  z-index: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; /* row on desktop */
   margin-top: 20px;
+}
+.footer-grid{
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; 
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* stack on phones */
+  }
 }

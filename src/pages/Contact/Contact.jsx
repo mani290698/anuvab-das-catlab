@@ -7,14 +7,15 @@ function Contact(){
       <div className="contact-row">
         <div className="contact-label">Principal Investigator</div>
         <div className="contact-details">
-          <div className="name">Todd Hyster</div>
-          <a href="mailto:thyster@princeton.edu" className="email">thyster@princeton.edu</a>
-          <div className="address">Frick Chemistry Laboratory, 285</div>
+          <div className="name">Anuvab Das</div>
+          <a href="mailto:thyster@princeton.edu" className="email">anuvab.das@ntu.edu.sg</a>
+          <div className="address">School of Chemistry, Chemical Engineering & Biotechnology
+<br></br>Nanyang Technological University</div>
           <div className="phone">609–258–5042</div>
         </div>
       </div>
 
-      <div className="contact-row">
+      {/* <div className="contact-row">
         <div className="contact-label">Faculty Assistant</div>
         <div className="contact-details">
           <div className="name">Pattie Faranetta</div>
@@ -33,7 +34,7 @@ function Contact(){
           <div>Frick Chemistry Laboratory, 285</div>
           <div>Princeton, NJ 08544–1023</div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

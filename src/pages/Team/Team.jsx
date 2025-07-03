@@ -95,7 +95,7 @@ const teamMembers = [
         <div />
       </div>
       <div className="team-profile-section">
-      <div className="top-profile">
+      {/* <div className="top-profile">
        <ProfileCard
       image={profileImg}
       name="Anuvab Das"
@@ -106,7 +106,7 @@ const teamMembers = [
       address="Frick Chemistry Laboratory, 285"
       education={educationData}
     />
-      </div>
+      </div> */}
 <div className="header" style={{marginBottom:"2rem"}}>
           <u>Members</u>
         </div>
