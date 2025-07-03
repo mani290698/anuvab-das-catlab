@@ -7,11 +7,12 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  top: 0;
 }
 
 .hero-overlay {
   width: 100%;
-  background: rgba(0, 20, 30, 0.7); /* dark overlay */
+  background: rgba(0, 0, 0, 0.877); /* dark overlay */
   padding: 4rem 2rem;
   top: 0%;
 }
