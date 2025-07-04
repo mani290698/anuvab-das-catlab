@@ -2,7 +2,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +20,7 @@
 .hero-content {
   display: flex;
   max-width: 1200px;
-  margin: 10px auto;
+  margin: 50px auto;
   gap: 2rem;
   align-items: center;
   justify-content: space-between;

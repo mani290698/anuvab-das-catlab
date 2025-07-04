@@ -76,7 +76,7 @@
     animation-delay: 0.4s;
 }
 
-.glass-button {
+.glass-button, .glass-button-publication {
     position: relative;
     padding: 0.75rem 1.8rem;
     border-radius: 50px;
@@ -93,6 +93,9 @@
     /* ⬅ adds space between text and arrow */
     transition: all 0.3s ease;
     overflow: hidden;
+}
+.glass-button-publication{
+   background: rgba(22, 22, 22, 0.397);
 }
 
 .glass-button .arrow {
@@ -118,6 +121,21 @@
     padding-bottom: 20px;
     margin-top: 20px;
     z-index: 1;
+    background-color: whitesmoke;
+}
+.news-update{
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 40vh;
+    gap: 5rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    z-index: 1;
+    background-color: rgb(214, 202, 214);
 }
 
 .publications {

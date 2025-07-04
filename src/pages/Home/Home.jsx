@@ -10,13 +10,17 @@ import publications from '../../data/publicationList.jsx';
 import Publication from "../../layouts/publication/publication.jsx";
 
 const images = [
+  // {
+  //   url: require("../../assets/images/Home_B1.jpg"),
+  //   textColor: "#ffffff", // use white for dark backgrounds
+  // },
   {
-    url: require("../../assets/images/BG1.jpg"),
-    textColor: "#ffffff", // use white for dark backgrounds
+    url: require("../../assets/images/Home_B3.jpg"),
+    textColor: "#ffffff", // use black for light backgrounds
   },
-  {
-    url: require("../../assets/images/BG3.jpg"),
-    textColor: "#000000", // use black for light backgrounds
+   {
+    url: require("../../assets/images/Home_B4.jpg"),
+    textColor: "#ffffff", // use black for light backgrounds
   },
 ];
 
@@ -56,12 +60,12 @@ function Home() {
             developing sustainable synthetic methods through protein engineering
           </div>
           <div className="learn-more-button">
-            <button className="glass-button" onClick={() => window.location.href = "/publications"}>Learn More <span className="arrow">→</span></button>
+            <button className="glass-button" onClick={() => window.location.href = "/research"}>Learn More <span className="arrow">→</span></button>
           </div>
         </div>
       </div>
       <div className="recent-publications">
-        <div className="header" style={{ marginTop: '20px', fontWeight: '500' }}>
+        <div className="header" style={{ marginTop: '20px', fontWeight: '500',fontSize:'40px' }}>
           Recent Publications
         </div>
         <div className="publications">
@@ -78,14 +82,17 @@ function Home() {
 
             </div>))}
         </div>
+          <div className="header" style={{  fontWeight: '500' }}>
+          <button className="glass-button-publication" onClick={() => window.location.href = "/publications"} >All Publications<span className="arrow">→</span></button>
+        </div>
       </div>
-      <div className="recent-publications">
-        <div className="header" style={{ marginTop: '20px', fontWeight: '500' }}>
+      <div className="news-update">
+        <div className="header" style={{ marginTop: '20px', fontWeight: '500', fontSize:'40px' }}>
           News & Updates
         </div>
-        <div  style={{display: "flex", flexDirection: "column", alignItems: "center", fontSize:"18px" }}>
-          <p>August 2025: xx, xx, and xx join as the founding members of the Das Lab</p>
-          <p>March 2025: Anuvab officially starts at Nanyang Technological University!</p>
+        <div  style={{display: "flex", flexDirection: "column", justifyContent:"left", fontSize:"24px", marginTop:"-30px"}}>
+          <p><strong>August 2025</strong>: xx, xx, and xx join as the founding members of the Das Lab</p>
+          <p><strong>March 2025</strong>: Anuvab officially starts at Nanyang Technological University!</p>
         </div>
       </div>
 

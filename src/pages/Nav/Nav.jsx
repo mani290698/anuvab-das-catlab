@@ -1,7 +1,7 @@
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import { useState } from 'react';
 import "../Nav/Nav.css";
-import lablogo from '../../assets/images/labLogo.png'
+import lablogo from '../../assets/images/Logo.jpg';
 
 function MyNavbar() {
   const [showTeamDropdown, setShowTeamDropdown] = useState(false);
@@ -21,11 +21,11 @@ function MyNavbar() {
         <Navbar.Brand href="#" style={{ color: 'white' }}>
           <img
             src={lablogo}
-            width="50"
+            width="auto"
             height="50"
             // className="d-inline-block align-top"
             alt="Das Lab Logo"
-          /><span style={{ marginLeft: '10px', fontWeight: '600' }}>Das Lab</span></Navbar.Brand>
+          /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">

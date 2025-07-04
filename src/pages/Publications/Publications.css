@@ -3,7 +3,7 @@
     grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
     min-height: 50vh;
     gap: 1rem;
-    background-image: url('../../assets/images/BG1.jpg');
+    background-image: url('../../assets/images/Publications.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -50,7 +50,7 @@
     width: 100%;            /* Full width of the container */
     text-align: left;       /* Align text to the left */
     padding-left: 20px;     /* Optional: adds spacing from the edge */
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 600;
   }
 

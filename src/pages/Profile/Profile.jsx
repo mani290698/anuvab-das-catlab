@@ -17,31 +17,31 @@ const FullProfile = () => {
                 label: "Postdoc.",
                 institution: "California Institute of Technology",
                 // description: "NIH-NRSA Postdoctoral Fellow",
-                advisor: "Frances H. Arnold",
-                year: "2021-2024",
+                advisor: "Prof. Frances H. Arnold",
+                year: "2021–2024",
             },
             {
                 label: "Ph.D.",
                 institution: "Texas A&M University",
-                advisor: "Tomislav Rovis",
-                year: "2015-2020",
+                advisor: "Prof. David C. Powers",
+                year: "2015–2020",
             },
             {
                 label: "M.Sc.",
                 institution: "IIT Kharagpur",
                 // description: "Marie Curie Fellow",
                 advisor: "Prof. Jayanta K. Ray",
-                year: "2013-2015",
+                year: "2013–2015",
             },
             {
                 label: "B.Sc.",
                 institution: "Presidency College",
                 advisor: "Prof. Abhishek Dey",
-                year: "2010-2013",
+                year: "2010–2013",
             },
         ],
         experience: [
-            { role: "Assistant Professor", institution: "Nanyang Technological University", year: "2025-present" },
+            { role: "Assistant Professor", institution: "Nanyang Technological University", year: "2025–present" },
         ],
         awards: [
             { name: "Reaxys PhD Prize Finalist", year: "2020" },
@@ -74,6 +74,7 @@ const FullProfile = () => {
                                     <i className="fas fa-envelope" style={{ fontSize: "24px", color: "#ffffff" }}></i>
                                     <span style={{color:"white"}}>@anuvab_chem</span>
                                 </div>
+                                 <a className="cv-link" href="/CV.pdf" download>📄 Download CV</a>
                             </div>
                         </div>
                         <div className="bio-text">
@@ -118,7 +119,7 @@ const FullProfile = () => {
                             <div className="middle">
                                 <strong>{edu.institution}</strong>
                                 {edu.description && <div>{edu.description}</div>}
-                                {edu.advisor && <em>Advisor: {edu.advisor}</em>}
+                                {edu.advisor && <em> <br></br>Advisor: {edu.advisor}</em>}
                             </div>
                             <div className="right">{edu.year}</div>
                         </div>
@@ -147,7 +148,6 @@ const FullProfile = () => {
                         </div>
                     ))}
                 </div>
-                <a className="cv-link" href="/CV.pdf" download>📄 Download CV</a>
             </div>
 
         </div>

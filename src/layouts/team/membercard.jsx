@@ -1,12 +1,12 @@
 import React from "react";
 import "./membercard.css";
 
-const MemberCard = ({ image, name, pronouns, email, education }) => {
+const MemberCard = ({ image, name, designation, email, education }) => {
   return (
     <div className="member-card">
       <img src={image} alt={name} className="member-img" />
-      <h3 className="member-name">{name}</h3>
-      <p className="member-pronouns">🧬 {pronouns}</p>
+      <h3 className="member-name">{name} <i className="fab fa-twitter"></i></h3> 
+      <p className="member-pronouns"> {designation}</p>
       <a href={`mailto:${email}`} className="member-email">
         {email}
       </a>

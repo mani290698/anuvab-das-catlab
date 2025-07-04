@@ -1,12 +1,13 @@
 import "../Research/Research.css";
 import React, { useEffect, useState, useRef } from "react";
+import research from '../../assets/images/Research.jpg';
 
 function Research() {
     return (
         <div>
-        <div className="publication-grid">
+        <div className="research-grid">
             <div className="grid-text">
-                <div className="publication-header">
+                <div className="publication-header" style={{ fontSize:"50px"}}>
                     Research
                 </div>
                 </div>
@@ -14,7 +15,7 @@ function Research() {
                 </div>
                 <div className="team-profile-section">
       
-                <div className="research-tab" style={{textAlign:"justify", marginRight:"10px"}}>
+                <div className="research-tab" style={{textAlign:"justify", fontSize:"24px"}}>
                     Chemical catalysis lies at the heart of many unmet challenges in synthetic chemistry and
                     small-molecule activation. Enzymes, nature’s catalysts, can perform extraordinary
                     transformations and allow living organisms to construct complex molecules from simple

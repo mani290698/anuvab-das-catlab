@@ -29,7 +29,7 @@ function Team(){
 const teamMembers = [
   {
     name: "Yi Liu",
-    pronouns: "she/her",
+    designation: "Undergrad",
     email: "yl4431@princeton.edu",
     image: profileImg,
     education: [
@@ -39,7 +39,7 @@ const teamMembers = [
   },
   {
     name: "Yi Liu",
-    pronouns: "she/her",
+    designation: "she/her",
     email: "yl4431@princeton.edu",
     image: profileImg,
     education: [
@@ -49,7 +49,7 @@ const teamMembers = [
   },
   {
     name: "Yi Liu",
-    pronouns: "she/her",
+    designation: "she/her",
     email: "yl4431@princeton.edu",
     image: profileImg,
     education: [
@@ -59,7 +59,7 @@ const teamMembers = [
   },
   {
     name: "Prasun Mukherjee",
-    pronouns: "he/him",
+    designation: "Undergrad",
     email: "pm2972@princeton.edu",
     image: profileImg,
     education: [
@@ -72,7 +72,7 @@ const teamMembers = [
   },
   {
     name: "Alexandra Brown",
-    pronouns: "she/her",
+    designation: "she/her",
     email: "ab5453@princeton.edu",
     image: profileImg,
     education: [
@@ -100,7 +100,7 @@ const teamMembers = [
       image={profileImg}
       name="Anuvab Das"
       title="Professor of Chemistry"
-      pronouns="he/him"
+      designation="he/him"
       email="anuvab.das@ntu.edu.sg"
       phone="609-258-5042"
       address="Frick Chemistry Laboratory, 285"
