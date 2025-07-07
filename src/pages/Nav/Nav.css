@@ -1,9 +1,10 @@
 /* Base link styling */
 .navbar-nav .nav-link {
   position: relative;
-  color: white !important;
+  color: rgb(255, 255, 255) !important;
   text-decoration: none;
   padding: 3px;
+  font-size: larger;
 }
 
 /* Glass-effect navbar */
@@ -12,9 +13,12 @@
   top: 0;
   width: 100%;
   z-index: 1030;
-  background-color: rgba(0, 0, 0, 0.096);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.6); /* darker for visibility on light bg */
+  color: white;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  opacity: 1;
+  transition: background-color 0.3s ease;
 }
 
 /* Animated underline effect on hover */

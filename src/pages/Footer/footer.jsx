@@ -11,12 +11,15 @@ function Footer() {
                 </div>
                 <div className="footer">
 
-                    <img src={lablogo} style={{ height: '70px', width: 'auto',marginBottom:"10px" }} />
-                    <a href="anuvab.das@ntu.edu.sg"><h6>anuvab.das@ntu.edu.sg</h6></a>
+                    <img src={lablogo} style={{ height: '70px', width: 'auto', marginBottom: "10px" }} />
+                    <a href="https://mail.google.com/mail/?view=cm&to=anuvab.das@ntu.edu.sg"
+                        target="_blank"
+                        rel="noopener noreferrer"><h6>anuvab.das@ntu.edu.sg</h6></a>
+                    <h6>@anuvab_chem</h6>
                     <h6>@anuvab_chem</h6>
 
                 </div>
-             <div className="footer-address"  style={{textAlign:"left"}} >
+                <div className="footer-address" style={{ textAlign: "left" }} >
                     <h6>School of Chemistry, Chemical Engineering & Biotechnology</h6>
                     <h6>Nanyang Technological University</h6>
                     <h6>21 Nanyang Link, CCEB-06-21</h6>

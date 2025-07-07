@@ -1,15 +1,15 @@
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
-    background-color: black;
-    min-height: 80vh;
-    gap: 1rem;
-    /* background-image: url('../../assets/images/proteinstructure.png'); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+  background-color: black;
+  min-height: 80vh;
+  gap: 1rem;
+  /* background-image: url('../../assets/images/proteinstructure.png'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
 }
 
 .slideshow-background {
@@ -21,6 +21,51 @@
   min-height: 80vh;
 }
 
+.slideshow-wrapper {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  /* adjust as needed */
+  overflow: hidden;
+}
+
+.slideshow-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.slideshow-slide {
+  flex: 0 0 100%;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Fixed overlay on top of sliding background */
+.slideshow-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 0 5%;
+  pointer-events: none;
+  /* prevents blocking buttons unless you override it below */
+}
+
+.grid-text {
+  pointer-events: auto;
+  /* allow button clicks */
+}
+
+
 .fade-in {
   opacity: 1;
 }
@@ -31,130 +76,135 @@
 
 
 .grid-image {
-    /* background-color: black; */
-    /* background-image: url('../../assets/images/proteinstructure.png');
+  /* background-color: black; */
+  /* background-image: url('../../assets/images/proteinstructure.png');
     background-repeat: no-repeat;
     background-size: cover; */
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 60vh;
-    max-width: 100%;
-    z-index: 1;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  max-width: 100%;
+  z-index: 1;
 }
 
 .grid-text {
-    /* background-color: black; */
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    z-index: 1;
+  /* background-color: black; */
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  z-index: 1;
 }
 
 .header {
-    font-weight: 500;
-    font-size: xx-large;
-    max-width: auto;
-    animation: fadeIn 1s ease-in-out forwards;
-    animation-delay: 0.2s;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: flex-start;
-    align-self: center;
+  font-weight: 500;
+  font-size: xx-large;
+  max-width: auto;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0.2s;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  align-self: center;
 }
 
 .para {
-    font-size: x-large;
-    justify-self: center;
-    max-width: auto;
-    animation: fadeIn 2s ease-in-out forwards;
-    animation-delay: 0.4s;
+  font-size: x-large;
+  justify-self: center;
+  max-width: auto;
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 0.4s;
 }
 
-.glass-button, .glass-button-publication {
-    position: relative;
-    padding: 0.75rem 1.8rem;
-    border-radius: 50px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    /* ⬅ adds space between text and arrow */
-    transition: all 0.3s ease;
-    overflow: hidden;
+.glass-button,
+.glass-button-publication {
+  position: relative;
+  padding: 0.75rem 1.8rem;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
-.glass-button-publication{
-   background: rgba(22, 22, 22, 0.397);
+
+.glass-button-publication {
+  background: rgba(22, 22, 22, 0.397);
 }
 
 .glass-button .arrow {
-    opacity: 0;
-    transform: translateX(-5px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .glass-button:hover .arrow {
-    opacity: 1;
-    transform: translateX(0);
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .recent-publications {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    min-height: 40vh;
-    gap: 5rem;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    padding-bottom: 20px;
-    margin-top: 20px;
-    z-index: 1;
-    background-color: whitesmoke;
-}
-.news-update{
   display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    min-height: 40vh;
-    gap: 5rem;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    padding-bottom: 20px;
-    margin-top: 20px;
-    z-index: 1;
-    background-color: rgb(214, 202, 214);
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-height: 40vh;
+  gap: 5rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  z-index: 1;
+  background-color: whitesmoke;
+}
+
+.news-update {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-height: 40vh;
+  gap: 5rem;
+  justify-content: center;
+  justify-items: center;
+  /* align-items: center; */
+  padding-bottom: 20px;
+  margin-top: 20px;
+  z-index: 1;
+  background-color: rgb(238, 231, 238);
 }
 
 .publications {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 4rem;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
 }
+
 .publications:hover .card {
   filter: blur(4px);
   transition: filter 0.5s ease;
 }
 
 .card {
-  transition: transform 0.5s ease; /* Smooth scale */
+  transition: transform 0.5s ease;
+  /* Smooth scale */
 }
+
 .card:hover {
   filter: none !important;
   z-index: 1;
@@ -163,24 +213,28 @@
 
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-        /* optional slide-up effect */
-    }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    /* optional slide-up effect */
+  }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media screen and (max-width: 768px) {
   .para {
-    font-size: large;        /* reduce font size for small screens */
-    text-align: center;      /* optional: center text for better UX */
-    padding: 0 1rem;         /* optional: add padding */
-    max-width: 90vw;         /* optional: limit max width */
+    font-size: large;
+    /* reduce font size for small screens */
+    text-align: center;
+    /* optional: center text for better UX */
+    padding: 0 1rem;
+    /* optional: add padding */
+    max-width: 90vw;
+    /* optional: limit max width */
   }
 
   .header {
@@ -194,5 +248,20 @@
     align-items: center;
     align-content: center;
     align-self: center;
-}
+  }
+
+   .slideshow-wrapper {
+    height: 60vh; /* slightly reduced height for mobile */
+  }
+
+  .slideshow-slide {
+    height: 60vh;
+  }
+
+  .slideshow-overlay {
+    grid-template-columns: 1fr; /* stack overlay content vertically */
+    grid-template-rows: auto auto;
+    padding: 10% 5%;
+    text-align: center; /* center text or elements */
+  }
 }

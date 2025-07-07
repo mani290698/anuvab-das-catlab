@@ -33,7 +33,7 @@ function Research() {
                     techniques to advance sustainable catalysis and elucidate the structures of reactive
                     bioinorganic fragments.
                     <br></br>
-                    <a href="/contact" > <strong>If our research sparks your interest, come join us!</strong></a>
+                    <a href="/join us" > <strong>If our research sparks your interest, come join us!</strong></a>
                 </div>
             </div>
             </div>

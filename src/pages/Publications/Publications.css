@@ -5,8 +5,9 @@
     gap: 1rem;
     background-image: url('../../assets/images/Publications.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position-x: left;
+    background-position-y: 70px;
     background-attachment: fixed;
     /* background-position-y: -15rem; */
   }

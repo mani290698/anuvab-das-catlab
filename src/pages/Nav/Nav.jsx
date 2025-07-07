@@ -13,7 +13,7 @@ function MyNavbar() {
   };
 
   const handleMouseLeave = () => {
-    timeoutId = setTimeout(() => setShowTeamDropdown(false), 200); // 200ms delay
+    timeoutId = setTimeout(() => setShowTeamDropdown(false), 100); // 200ms delay
   };
   return (
     <Navbar expand="lg">
@@ -32,10 +32,13 @@ function MyNavbar() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/research">Research</Nav.Link>
             <Nav.Link href="/publications">Publications</Nav.Link>
-            <NavDropdown title="Team" id="team-dropdown">
+            <NavDropdown title="Team" id="team-dropdown" show={showTeamDropdown}
+              onMouseEnter={() => handleMouseEnter()}
+              onMouseLeave={() => handleMouseLeave()}>
               <NavDropdown.Item href="/anuvab">Anuvab</NavDropdown.Item>
               <NavDropdown.Item href="/team">Members</NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link href="/join us">Join Us</Nav.Link>
             <Nav.Link href="/resources">Resources</Nav.Link>
           </Nav>
         </Navbar.Collapse>

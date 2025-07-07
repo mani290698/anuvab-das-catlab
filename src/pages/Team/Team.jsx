@@ -36,6 +36,7 @@ const teamMembers = [
       { degree: "M.S. Memorial University", advisor: "Christopher M. Kozak" },
       { degree: "Ph.D. McGill University", advisor: "Bruce A. Arndtsen" },
     ],
+     country:"https://flagcdn.com/w40/cn.png"
   },
   {
     name: "Yi Liu",
@@ -46,6 +47,7 @@ const teamMembers = [
       { degree: "M.S. Memorial University", advisor: "Christopher M. Kozak" },
       { degree: "Ph.D. McGill University", advisor: "Bruce A. Arndtsen" },
     ],
+     country:"https://flagcdn.com/w40/fr.png"
   },
   {
     name: "Yi Liu",
@@ -56,6 +58,7 @@ const teamMembers = [
       { degree: "M.S. Memorial University", advisor: "Christopher M. Kozak" },
       { degree: "Ph.D. McGill University", advisor: "Bruce A. Arndtsen" },
     ],
+    country:"https://flagcdn.com/w40/ru.png"
   },
   {
     name: "Prasun Mukherjee",
@@ -69,6 +72,7 @@ const teamMembers = [
         advisor: "Debabrata Maiti",
       },
     ],
+     country:"https://flagcdn.com/w40/in.png"
   },
   {
     name: "Alexandra Brown",
@@ -81,13 +85,14 @@ const teamMembers = [
         advisor: "Daniel Suess",
       },
     ],
+     country:"https://flagcdn.com/w40/us.png"
   },
 ];
     return(
         <div>
         <div className="publication-grid">
         <div className="grid-text">
-          <div className="publication-header">
+          <div className="publication-header" style={{ fontSize:"50px"}}>
             Team
           </div>
         

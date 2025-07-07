@@ -1,6 +1,6 @@
 import React from "react";
 import "./Profile.css";
-import proteinImg from '../../assets/images/protein.jpg';
+import proteinImg from '../../assets/images/Logo.jpg';
 import headshot from '../../assets/images/Headshot.jpg';
 // import Cv from '../../data/CV.pdf';
 
@@ -53,88 +53,94 @@ const FullProfile = () => {
 
     return (
         <div>
-           
-                <div className="hero-overlay">
-                    <div className="hero-content">
-                        <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                            <div>
-                                <img src={headshot} alt="Princeton" className="logo" />
-                            </div>
-                            <br></br>
-                            <div style={{ display: "flex", flexDirection: "column", gap: "15px", marginTop: "10px", justifyContent: "center" }}>
-                               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                                    <i className="fab fa-twitter" style={{ fontSize: "24px", color: "#ffffff" }}></i>
-                                    <span style={{color:"white"}}>@anuvab_chem</span>
-                                </div>
-                                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                                    <i className="fab fa-instagram" style={{ fontSize: "24px", color: "#ffffff" }}></i>
-                                    <span style={{color:"white"}}>@anuvab_chem</span>
-                                </div>
-                                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                                    <i className="fas fa-envelope" style={{ fontSize: "24px", color: "#ffffff" }}></i>
-                                    <span style={{color:"white"}}>@anuvab_chem</span>
-                                </div>
-                                 <a className="cv-link" href="/CV.pdf" download>📄 Download CV</a>
-                            </div>
+
+            <div className="hero-overlay">
+                <div className="hero-content">
+                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                        <div>
+                            <img src={headshot} alt="Princeton" className="logo" />
                         </div>
-                        <div className="bio-text">
-                            <h1>Anuvab Das</h1>
-                            <div className="green-line" />
-                            <p style={{textAlign:"justify"}}>
-                                Born and raised in Kolkata, Anuvab obtained his B.Sc. degree from Presidency College in
-                                2013. During his undergraduate studies, he gained his first research experience in Prof.
-                                Abhishek Dey’s lab at the Indian Association for the Cultivation of Science, where he studied
-                                the spectroelectrochemical properties of novel porphyrinic compounds. He then pursued
-                                M.Sc. at the Indian Institute of Technology-Kharagpur, conducting his master’s thesis
-                                research in Prof. Jayanta K. Ray’s lab, where he developed a new generation of palladium
-                                catalysts for annulation reactions.
-                            </p>
-                            <p style={{textAlign:"justify"}}>
-                                In 2015, Anuvab moved to Texas A&M University to pursue his Ph.D. under the guidance of
-                                Prof. David C. Powers. His graduate research focused on structurally characterizing transient
-                                intermediates involved in nitrene transfer reactions using in situ crystallography. After
-                                completing his Ph.D. in 2020, he joined Prof. Frances H. Arnold’s group at the California
-                                Institute of Technology as a postdoctoral researcher. There, he developed new-to-nature
-                                amination reactions by engineering heme proteins using directed evolution and
-                                spectroscopically characterizing the intermediates involved.
-                            </p>
-                            <p style={{textAlign:"justify"}}>
-                                In 2025, Anuvab joined the School of Chemistry, Chemical Engineering, and Biotechnology
-                                at Nanyang Technological University as an Assistant Professor.
-                            </p>
+                        <br></br>
+                        <div style={{ display: "flex", flexDirection: "column", gap: "15px", marginTop: "10px", justifyContent: "center" }}>
+                            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                                <i className="fab fa-twitter" style={{ fontSize: "24px", color: "#ffffff" }}></i>
+                                <span style={{ color: "white" }}>@anuvab_chem</span>
+                            </div>
+                            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                                <i className="fab fa-instagram" style={{ fontSize: "24px", color: "#ffffff" }}></i>
+                                <span style={{ color: "white" }}>@anuvab_chem</span>
+                            </div>
+                            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                                <i className="fas fa-envelope" style={{ fontSize: "24px", color: "#ffffff" }}></i>
+                                <span style={{ color: "white" }}>@anuvab_chem</span>
+                            </div>
+                            <a className="cv-link" href="/CV.pdf" download>📄 Download CV</a>
                         </div>
-                        {/* <div style={{opacity:"0.7"}}><img src={headshot} alt="Princeton" className="logo" /></div> */}
                     </div>
+                    <div className="bio-text">
+                        <h1>Anuvab Das</h1>
+                        <div className="green-line" />
+                        <p style={{ textAlign: "justify" }}>
+                            Born and raised in Kolkata, Anuvab obtained his B.Sc. degree from Presidency College in
+                            2013. During his undergraduate studies, he gained his first research experience in Prof.
+                            Abhishek Dey’s lab at the Indian Association for the Cultivation of Science, where he studied
+                            the spectroelectrochemical properties of novel porphyrinic compounds. He then pursued
+                            M.Sc. at the Indian Institute of Technology-Kharagpur, conducting his master’s thesis
+                            research in Prof. Jayanta K. Ray’s lab, where he developed a new generation of palladium
+                            catalysts for annulation reactions.
+                        </p>
+                        <p style={{ textAlign: "justify" }}>
+                            In 2015, Anuvab moved to Texas A&M University to pursue his Ph.D. under the guidance of
+                            Prof. David C. Powers. His graduate research focused on structurally characterizing transient
+                            intermediates involved in nitrene transfer reactions using in situ crystallography. After
+                            completing his Ph.D. in 2020, he joined Prof. Frances H. Arnold’s group at the California
+                            Institute of Technology as a postdoctoral researcher. There, he developed new-to-nature
+                            amination reactions by engineering heme proteins using directed evolution and
+                            spectroscopically characterizing the intermediates involved.
+                        </p>
+                        <p style={{ textAlign: "justify" }}>
+                            In 2025, Anuvab joined the School of Chemistry, Chemical Engineering, and Biotechnology
+                            at Nanyang Technological University as an Assistant Professor.
+                        </p>
+                    </div>
+                    {/* <div style={{opacity:"0.7"}}><img src={headshot} alt="Princeton" className="logo" /></div> */}
                 </div>
-         
+            </div>
+
             <div className="profile-full-card">
                 {/* <h3>{profile.title}</h3> */}
 
 
-                <div className="section">
-                    <h2>Education</h2>
+                <div className="section" style={{ fontSize: "large" }}>
+                    <h2 style={{ fontSize: "2rem" }}>Education</h2>
                     {profile.education.map((edu, idx) => (
-                        <div key={idx} className="entry">
+                        <div key={idx} className="entry" style={{ fontSize: "1.25rem" }}>
                             <div className="left">{edu.label}</div>
-                            <div className="middle">
+                            <div className="middle" style={{ fontSize: "1.25rem" }}>
                                 <strong>{edu.institution}</strong>
                                 {edu.description && <div>{edu.description}</div>}
-                                {edu.advisor && <em> <br></br>Advisor: {edu.advisor}</em>}
+                                {edu.advisor && (
+                                    <em>
+                                        <br />
+                                        Advisor: {edu.advisor}
+                                    </em>
+                                )}
                             </div>
-                            <div className="right">{edu.year}</div>
+                            <div className="right" style={{ fontSize: "1.25rem" }}>{edu.year}</div>
                         </div>
                     ))}
                 </div>
+
 
                 <div className="section">
                     <h2>Experience</h2>
                     {profile.experience.map((exp, idx) => (
                         <div key={idx} className="entry single-line">
-                            <div className="middle">
+                            <div className="middle" style={{ fontSize: "1.25rem" }}>
                                 <strong>{exp.role}</strong>
                                 <div>{exp.institution}</div>
                             </div>
-                            <div className="right">{exp.year}</div>
+                            <div className="right" style={{ fontSize: "1.25rem" }}>{exp.year}</div>
                         </div>
                     ))}
                 </div>
@@ -142,9 +148,9 @@ const FullProfile = () => {
                 <div className="section">
                     <h2>Honors & Awards</h2>
                     {profile.awards.map((award, idx) => (
-                        <div key={idx} className="entry single-line">
-                            <div className="middle">{award.name}</div>
-                            <div className="right">{award.year}</div>
+                        <div key={idx} className="entry single-line" style={{ fontSize: "1.25rem" }}>
+                            <div className="middle" style={{ fontSize: "1.25rem" }}>{award.name}</div>
+                            <div className="right" style={{ fontSize: "1.25rem" }}>{award.year}</div>
                         </div>
                     ))}
                 </div>
