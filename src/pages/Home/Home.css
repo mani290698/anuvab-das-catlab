@@ -121,8 +121,7 @@
   animation-delay: 0.4s;
 }
 
-.glass-button,
-.glass-button-publication {
+.glass-button {
   position: relative;
   padding: 0.75rem 1.8rem;
   border-radius: 50px;
@@ -142,6 +141,21 @@
 
 .glass-button-publication {
   background: rgba(22, 22, 22, 0.397);
+  position: relative;
+  padding: 0.75rem 1.8rem;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .glass-button .arrow {
@@ -165,9 +179,10 @@
   justify-items: center;
   align-items: center;
   padding-bottom: 20px;
-  margin-top: 20px;
   z-index: 1;
-  background-color: whitesmoke;
+  background-color: #1a1a1ae7;
+  margin-top: 2px;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .news-update {
@@ -175,14 +190,13 @@
   flex-wrap: wrap;
   flex-direction: column;
   min-height: 40vh;
-  gap: 5rem;
-  justify-content: center;
+  gap: 8rem;
+  /* justify-content: center; */
   justify-items: center;
   /* align-items: center; */
   padding-bottom: 20px;
-  margin-top: 20px;
   z-index: 1;
-  background-color: rgb(238, 231, 238);
+  background-color: #222831ee;
 }
 
 .publications {
@@ -250,8 +264,9 @@
     align-self: center;
   }
 
-   .slideshow-wrapper {
-    height: 60vh; /* slightly reduced height for mobile */
+  .slideshow-wrapper {
+    height: 60vh;
+    /* slightly reduced height for mobile */
   }
 
   .slideshow-slide {
@@ -259,9 +274,11 @@
   }
 
   .slideshow-overlay {
-    grid-template-columns: 1fr; /* stack overlay content vertically */
+    grid-template-columns: 1fr;
+    /* stack overlay content vertically */
     grid-template-rows: auto auto;
     padding: 10% 5%;
-    text-align: center; /* center text or elements */
+    text-align: center;
+    /* center text or elements */
   }
 }

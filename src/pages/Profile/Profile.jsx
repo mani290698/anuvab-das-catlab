@@ -2,6 +2,9 @@ import React from "react";
 import "./Profile.css";
 import proteinImg from '../../assets/images/Logo.jpg';
 import headshot from '../../assets/images/Headshot.jpg';
+import twitter from '../../assets/images/Twitter_Logo.png';
+import linkedin from '../../assets/images/linkedin1.png';
+import bluesky from '../../assets/images/Bluesky_Logo.jpg';
 // import Cv from '../../data/CV.pdf';
 
 const FullProfile = () => {
@@ -63,16 +66,33 @@ const FullProfile = () => {
                         <br></br>
                         <div style={{ display: "flex", flexDirection: "column", gap: "15px", marginTop: "10px", justifyContent: "center" }}>
                             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                                <i className="fab fa-twitter" style={{ fontSize: "24px", color: "#ffffff" }}></i>
-                                <span style={{ color: "white" }}>@anuvab_chem</span>
+                                <img
+                                    src={twitter}// Replace with your actual image path
+                                    alt="Twitter"
+                                    style={{ width: "24px", height: "24px" }}
+                                />
+                                <a href="https://x.com/anuvab_chem">
+                                <span style={{ color: "white" }}>anuvab_chem</span></a>
                             </div>
                             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                                <i className="fab fa-instagram" style={{ fontSize: "24px", color: "#ffffff" }}></i>
-                                <span style={{ color: "white" }}>@anuvab_chem</span>
+                                <img
+                                    src={linkedin}// Replace with your actual image path
+                                    alt="Linkedin"
+                                    style={{ width: "24px", height: "24px" }}
+                                />
+                                <a href="https://www.linkedin.com/in/anuvab-das-7a191436/">
+                                <span style={{ color: "white" }}>anuvab-chem</span></a>
+                                
                             </div>
                             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                                <i className="fas fa-envelope" style={{ fontSize: "24px", color: "#ffffff" }}></i>
-                                <span style={{ color: "white" }}>@anuvab_chem</span>
+                                <img
+                                    src={bluesky}// Replace with your actual image path
+                                    alt="Bluesky"
+                                    style={{ width: "24px", height: "24px" }}
+                                />
+                                <a href="https://bsky.app/profile/anuvab-chem.bsky.social">
+                                <span style={{ color: "white" }}>anuvab-das</span></a>
+                            
                             </div>
                             <a className="cv-link" href="/CV.pdf" download>📄 Download CV</a>
                         </div>

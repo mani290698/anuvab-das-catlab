@@ -9,4 +9,5 @@
   background-position: center;
   background-attachment: fixed;
   background-position-y: bottom;
+  animation: fadeIn 1s ease-in-out forwards;
 }

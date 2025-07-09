@@ -16,7 +16,12 @@ const images = [
   {
     url: require("../../assets/images/Home_B3.jpg"),
     textColor: "#ffffff", // use black for light backgrounds
-    backgroundPositionY: "center",
+    backgroundPositionY: "70%",
+  },
+  {
+    url: require("../../assets/images/Home_B1.jpg"),
+    textColor: "#ffffff", // use black for light backgrounds
+    backgroundPositionY: "70%",
   },
    {
     url: require("../../assets/images/Home_B4.jpg"),
@@ -35,7 +40,25 @@ function Home() {
   }, 5000); // slide every 5s
 
   return () => clearInterval(interval);
+
+  
 }, []);
+
+ useEffect(() => {
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    revealElements.forEach(el => observer.observe(el));
+
+    return () => revealElements.forEach(el => observer.unobserve(el));
+  }, []);
 
   return (
     <div>
@@ -110,7 +133,7 @@ function Home() {
 </div>
 
       <div className="recent-publications">
-        <div className="header" style={{ marginTop: '20px', fontWeight: '500',fontSize:'40px' }}>
+        <div className="header" style={{ marginTop: '20px', fontWeight: '500',fontSize:'40px',color:"white" }}>
           Recent Publications
         </div>
         <div className="publications">
@@ -127,15 +150,15 @@ function Home() {
 
             </div>))}
         </div>
-          <div className="header" style={{  fontWeight: '500' }}>
+          <div className="header"  style={{  fontWeight: '500' }}>
           <button className="glass-button-publication" onClick={() => window.location.href = "/publications"} >All Publications<span className="arrow">→</span></button>
         </div>
       </div>
       <div className="news-update">
-        <div className="header" style={{ marginTop: '20px', fontWeight: '500', fontSize:'40px' }}>
+        <div className="header" style={{ marginTop: '20px', fontWeight: '500', fontSize:'40px',color:"white" }}>
           News & Updates
         </div>
-        <div  style={{display: "flex", flexDirection: "column", justifyContent:"left", fontSize:"24px", marginTop:"-30px", marginLeft:"20px"}}>
+        <div  style={{display: "flex", flexDirection: "column", justifyContent:"left", fontSize:"24px", marginTop:"-30px", marginLeft:"20px", color:"white"}}>
           <p><strong>August 2025</strong>: xx, xx, and xx join as the founding members of the Das Lab</p>
           <p><strong>March 2025</strong>: Anuvab officially starts at Nanyang Technological University!</p>
         </div>

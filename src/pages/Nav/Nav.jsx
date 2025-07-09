@@ -38,7 +38,7 @@ function MyNavbar() {
               <NavDropdown.Item href="/anuvab">Anuvab</NavDropdown.Item>
               <NavDropdown.Item href="/team">Members</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/join us">Join Us</Nav.Link>
+            <Nav.Link href="/join-us">Join Us</Nav.Link>
             <Nav.Link href="/resources">Resources</Nav.Link>
           </Nav>
         </Navbar.Collapse>

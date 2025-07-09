@@ -15,7 +15,7 @@ function Research() {
                 </div>
                 <div className="team-profile-section">
       
-                <div className="research-tab" style={{textAlign:"justify", fontSize:"24px"}}>
+                <div className="research-tab" style={{textAlign:"justify", fontSize:"22px"}}>
                     Chemical catalysis lies at the heart of many unmet challenges in synthetic chemistry and
                     small-molecule activation. Enzymes, nature’s catalysts, can perform extraordinary
                     transformations and allow living organisms to construct complex molecules from simple
@@ -33,7 +33,7 @@ function Research() {
                     techniques to advance sustainable catalysis and elucidate the structures of reactive
                     bioinorganic fragments.
                     <br></br>
-                    <a href="/join us" > <strong>If our research sparks your interest, come join us!</strong></a>
+                    <a href="/join-us" > <strong>If our research sparks your interest, come join us!</strong></a>
                 </div>
             </div>
             </div>

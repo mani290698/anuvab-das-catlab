@@ -8,6 +8,7 @@
   justify-content: center;
   position: relative;
   top: 0;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .hero-overlay {
@@ -15,6 +16,7 @@
   background: rgba(0, 0, 0, 0.877); /* dark overlay */
   padding: 4rem 2rem;
   top: 0%;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .hero-content {
@@ -25,6 +27,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .bio-text {
@@ -41,7 +44,7 @@
 .green-line {
   width: 60px;
   height: 4px;
-  background-color: #7d1aff;
+  background-color: #007BFF;
   margin-bottom: 1rem;
 }
 
@@ -94,7 +97,7 @@
   display: inline-block;
   margin-top: 0.5rem;
   text-decoration: none;
-  color: #c00;
+  color: #007BFF;
   font-weight: bold;
   align-items: center;
   justify-self: center;
@@ -110,6 +113,18 @@
   padding-bottom: 1rem;
 }
 
+a {
+  text-decoration: none !important;     /* Removes underline */
+  color: #333;               /* Set your preferred color */
+  display: inline-block;     /* Required for transform to work properly */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+  transform: scale(1.05);    /* Zoom in slightly */
+  color: #007BFF;         /* Optional: change color on hover */
+}
+
 .logo {
   max-width: auto;
   height: 300px;
@@ -123,11 +138,12 @@
 
 .section {
   margin-top: 2rem;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .section h2 {
   margin-bottom: 1rem;
-  border-left: 3px solid #7d1aff;
+  border-left: 3px solid #007BFF;
   padding-left: 0.5rem;
 }
 
@@ -143,7 +159,7 @@
 }
 
 .left {
-  color: #7d1aff;
+  color: #007BFF;
   font-weight: bold;
 }
 

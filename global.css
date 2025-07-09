@@ -17,3 +17,24 @@
   opacity: 0;
   transition: opacity 1000ms ease;
 }
+
+a {
+  position: relative;
+  color: #333;
+  text-decoration: none;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #007BFF;
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}

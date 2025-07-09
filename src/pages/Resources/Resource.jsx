@@ -47,7 +47,7 @@ function Resource() {
                         <strong>– </strong> <a href="https://easyspin.org/easyspin/documentation/isotopetable.html" target="_blank" rel="noopener noreferrer">Nuclear Isotope Database (EPR)</a><br></br>
                         <strong>– </strong> <a href="https://organicchemistrydata.org/" target="_blank" rel="noopener noreferrer">Organic Chemistry Data</a><br></br>
                         <strong>– </strong> <a href="https://pubs.acs.org/doi/10.1021/om100106e" target="_blank" rel="noopener noreferrer">Chemical Shifts of Trace Impurities (NMR)</a><br></br>
-                       <strong>– </strong>Safety Videos – UCLA<br></br>
+                       <strong>– </strong><a href="https://www.chemistry.ucla.edu/safety-videos/" target="_blank" rel="noopener noreferrer">Safety Videos – UCLA</a><br></br>
                         <strong>– </strong> <a href="https://safetynet.web.unc.edu/" target="_blank" rel="noopener noreferrer">The Safety Net</a>
                     </ul>
 

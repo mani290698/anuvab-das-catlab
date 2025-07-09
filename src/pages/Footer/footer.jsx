@@ -1,6 +1,9 @@
 import "../Footer/footer.css";
 import lablogo from '../../assets/images/LogoFooter.jpg'
 import NTU from '../../assets/images/NTU1.jpg'
+import twitter from '../../assets/images/Twitter_Logo.png';
+import linkedin from '../../assets/images/linkedin1.png';
+import bluesky from '../../assets/images/Bluesky_Logo.jpg';
 
 function Footer() {
     return (
@@ -11,12 +14,39 @@ function Footer() {
                 </div>
                 <div className="footer">
 
-                    <img src={lablogo} style={{ height: '70px', width: 'auto', marginBottom: "10px" }} />
+                    <img src={lablogo} style={{ height: '70px', width: 'auto', marginBottom: "10px" }} /><br></br>
                     <a href="https://mail.google.com/mail/?view=cm&to=anuvab.das@ntu.edu.sg"
                         target="_blank"
-                        rel="noopener noreferrer"><h6>anuvab.das@ntu.edu.sg</h6></a>
-                    <h6>@anuvab_chem</h6>
-                    <h6>@anuvab_chem</h6>
+                        rel="noopener noreferrer"><h6>anuvab.das@ntu.edu.sg</h6></a><br></br>
+                    <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                        <img
+                            src={twitter}// Replace with your actual image path
+                            alt="Twitter"
+                            style={{ width: "24px", height: "24px" }}
+                        />
+                        <a href="https://x.com/anuvab_chem">
+                            <span style={{ color: "white" }}>anuvab_chem</span></a>
+                    </div><br></br>
+                    <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                        <img
+                            src={linkedin}// Replace with your actual image path
+                            alt="Linkedin"
+                            style={{ width: "24px", height: "24px" }}
+                        />
+                        <a href="https://www.linkedin.com/in/anuvab-das-7a191436/">
+                            <span style={{ color: "white" }}>anuvab-chem</span></a>
+
+                    </div><br></br>
+                    <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                        <img
+                            src={bluesky}// Replace with your actual image path
+                            alt="Bluesky"
+                            style={{ width: "24px", height: "24px" }}
+                        />
+                        <a href="https://bsky.app/profile/anuvab-chem.bsky.social">
+                            <span style={{ color: "white" }}>anuvab-das</span></a>
+
+                    </div>
 
                 </div>
                 <div className="footer-address" style={{ textAlign: "left" }} >

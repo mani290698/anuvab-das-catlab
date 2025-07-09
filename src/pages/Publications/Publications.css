@@ -19,6 +19,7 @@
     min-height: 40vh;
     gap: 1rem;
     margin: 10px;
+    animation: fadeIn 1s ease-in-out forwards;
   }
 
   .mentored-line{

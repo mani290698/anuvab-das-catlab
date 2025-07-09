@@ -1,12 +1,30 @@
 body {
-  margin: 5px;
   font-family: 'Poppins' !important; /* Replace with your desired font */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Poppins' !important;
+}
+
+.page-fade-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1000ms ease, transform 1000ms ease;
+}
+
+.page-fade-exit {
+  opacity: 1;
+}
+
+.page-fade-exit-active {
+  opacity: 0;
+  transition: opacity 1000ms ease;
 }
 
