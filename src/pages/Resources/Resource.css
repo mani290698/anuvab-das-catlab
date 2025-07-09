@@ -27,7 +27,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-    background-position-y: bottom;
+  background-position-y: 38%;
 }
 
 /* .box {

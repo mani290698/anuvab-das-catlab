@@ -8,6 +8,6 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-position-y: bottom;
+  background-position-y: 19%;
   animation: fadeIn 1s ease-in-out forwards;
 }

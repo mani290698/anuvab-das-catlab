@@ -1,6 +1,5 @@
 import "./JoinUs.css";
 import React, { useEffect, useState, useRef } from "react";
-import bgVideo from '../../assets/images/bgvi.mp4';
 
 function JoinUs() {
     return (

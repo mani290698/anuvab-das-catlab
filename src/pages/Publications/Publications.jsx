@@ -51,8 +51,8 @@ function Publications() {
           <div className="mentored-line" />
         </div>
         <div className="all-publications">
-          <div style={{ justifyItems: "center", fontSize: "24px" }}>  <p><strong>At California Institute of Technology</strong></p></div>
-          <div style={{marginRight: "15rem", fontSize: "20px", textAlign: "justify" }}>
+          <div style={{ display:"flex",justifyItems: "center", fontSize:  "clamp(1.5rem, 2vw, 1.5rem)",justifyContent:"center" }}>  <strong>At California Institute of Technology</strong></div><br></br>
+          <div style={{ fontSize:  "clamp(1rem, 2vw, 1.25rem)", textAlign: "justify",justifySelf:"left",width:"100%" }}>
 
             {publications.mentoredPaper.cali.map(publicationData => (
               <div  key={publicationData.id}>
@@ -68,8 +68,8 @@ function Publications() {
               </div>
             ))}
           </div>
-          <div style={{ justifyItems: "center", fontSize: "24px" }}>  <p><strong>At Texas A&M University</strong></p></div>
-          <div style={{marginRight: "15rem", fontSize: "20px", textAlign: "justify" }}>
+          <div style={{ display:"flex",justifyContent:"center", fontSize:  "clamp(1.5rem, 2vw, 1.5rem)" }}> <strong>At Texas A&M University</strong></div><br></br>
+           <div style={{ fontSize:  "clamp(1rem, 2vw, 1.25rem)", textAlign: "justify",justifySelf:"left",width:"100%" }}>
 
             {publications.mentoredPaper.texas.map(publicationData => (
               <div  key={publicationData.id}>
@@ -85,8 +85,8 @@ function Publications() {
               </div>
             ))}
           </div>
-          <div style={{ justifyItems: "center", fontSize: "24px" }}>  <p><strong>At IIT Kharagpur</strong></p></div>
-          <div style={{marginRight: "15rem", fontSize: "20px", textAlign: "justify" }}>
+          <div style={{ display:"flex",justifyContent:"center", fontSize:  "clamp(1.5rem, 2vw, 1.5rem)" }}> <strong>At IIT Kharagpur</strong></div><br></br>
+         <div style={{ fontSize:  "clamp(1rem, 2vw, 1.25rem)", textAlign: "justify",justifySelf:"left",width:"100%" }}>
 
             {publications.mentoredPaper.kharagpur.map(publicationData => (
               <div  key={publicationData.id}>

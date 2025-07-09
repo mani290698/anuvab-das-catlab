@@ -24,18 +24,8 @@ function Footer() {
                             alt="Twitter"
                             style={{ width: "24px", height: "24px" }}
                         />
-                        <a href="https://x.com/anuvab_chem">
-                            <span style={{ color: "white" }}>anuvab_chem</span></a>
-                    </div><br></br>
-                    <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                        <img
-                            src={linkedin}// Replace with your actual image path
-                            alt="Linkedin"
-                            style={{ width: "24px", height: "24px" }}
-                        />
-                        <a href="https://www.linkedin.com/in/anuvab-das-7a191436/">
-                            <span style={{ color: "white" }}>anuvab-chem</span></a>
-
+                        <a href=" https://x.com/Das_ChemLab">
+                            <span style={{ color: "black" }}>Das_ChemLab</span></a>
                     </div><br></br>
                     <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                         <img
@@ -43,8 +33,8 @@ function Footer() {
                             alt="Bluesky"
                             style={{ width: "24px", height: "24px" }}
                         />
-                        <a href="https://bsky.app/profile/anuvab-chem.bsky.social">
-                            <span style={{ color: "white" }}>anuvab-das</span></a>
+                        <a href="https://bsky.app/profile/das-lab.bsky.social">
+                            <span style={{ color: "black" }}>das-lab</span></a>
 
                     </div>
 

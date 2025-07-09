@@ -2,7 +2,7 @@ import "../Team/Team.css";
 import React, { useEffect, useState, useRef } from "react";
 import ProfileCard from '../../layouts/team/profilecard'
 import MemberCard from "../../layouts/team/membercard";
-import profileImg from '../../assets/images/lablogo.jpg'
+import profileImg from '../../assets/images/Logo.jpg'
 
 function Team(){
 
