@@ -189,14 +189,15 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  min-height: 40vh;
-  gap: 8rem;
+  min-height: 30vh;
+  gap: 5rem;
   /* justify-content: center; */
   justify-items: center;
   /* align-items: center; */
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   z-index: 1;
   background-color: #222831ee;
+  margin-top: 2px;
 }
 
 .publications {

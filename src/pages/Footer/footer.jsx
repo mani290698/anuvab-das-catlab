@@ -14,36 +14,38 @@ function Footer() {
                 </div>
                 <div className="footer">
 
-                    <img src={lablogo} style={{ height: '70px', width: 'auto', marginBottom: "10px" }} /><br></br>
+                    <img src={lablogo} style={{ height: '60px', width: 'auto', marginBottom: "20px" }} />
                     <a href="https://mail.google.com/mail/?view=cm&to=anuvab.das@ntu.edu.sg"
                         target="_blank"
-                        rel="noopener noreferrer"><h6>anuvab.das@ntu.edu.sg</h6></a><br></br>
-                    <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                        <img
+                        rel="noopener noreferrer"><h5 style={{color:"black",marginBottom: "20px",fontStyle:"italic" }}>anuvab.das@ntu.edu.sg</h5></a>
+                    <div style={{ display: "flex", alignItems: "center", marginBottom: "20px" }}>
+                        
+                        <a href=" https://x.com/Das_ChemLab" target="_blank"
+                        rel="noopener noreferrer"> <img
                             src={twitter}// Replace with your actual image path
                             alt="Twitter"
-                            style={{ width: "24px", height: "24px" }}
-                        />
-                        <a href=" https://x.com/Das_ChemLab">
-                            <span style={{ color: "black" }}>Das_ChemLab</span></a>
-                    </div><br></br>
-                    <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                        <img
+                            style={{ width: "26px", height: "26px" }}
+                        />&nbsp;
+                            <span style={{ color: "black", fontSize: "1.2rem", fontWeight: "500",fontStyle:"italic"}}>Das_ChemLab</span></a>
+                    </div>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                        
+                        <a href="https://bsky.app/profile/das-lab.bsky.social" target="_blank"
+                        rel="noopener noreferrer"><img
                             src={bluesky}// Replace with your actual image path
                             alt="Bluesky"
-                            style={{ width: "24px", height: "24px" }}
-                        />
-                        <a href="https://bsky.app/profile/das-lab.bsky.social">
-                            <span style={{ color: "black" }}>das-lab</span></a>
+                            style={{ width: "26px", height: "26px" }}
+                        /> &nbsp;
+                            <span style={{ color: "black", fontSize: "1.2rem", fontWeight: "500",fontStyle:"italic"}}>das-lab</span></a>
 
                     </div>
 
                 </div>
                 <div className="footer-address" style={{ textAlign: "left" }} >
-                    <h6>School of Chemistry, Chemical Engineering & Biotechnology</h6>
-                    <h6>Nanyang Technological University</h6>
-                    <h6>21 Nanyang Link, CCEB-06-21</h6>
-                    <h6>Singapore 637371</h6>
+                    <h5>Nanyang Technological University</h5>
+                    <h5>School of Chemistry, Chemical Engineering & Biotechnology</h5>
+                    <h5>21 Nanyang Link, CCEB-06-21</h5>
+                    <h5>Singapore 637371</h5>
 
                 </div>
             </div>

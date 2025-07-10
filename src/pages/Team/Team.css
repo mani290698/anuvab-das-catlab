@@ -1,14 +1,29 @@
 .team-profile-section {
   padding: 2rem;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   text-align: center;
+   display: flex;
+  flex-direction: column;
 }
 
 .top-profile {
   margin-bottom: 3rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+  min-height: 50vh;
+  gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.877);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: left;
+  background-position-y: 70px;
+  background-attachment: fixed;
 }
 
 .team-members-grid {

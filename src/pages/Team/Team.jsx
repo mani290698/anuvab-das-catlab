@@ -90,7 +90,7 @@ const teamMembers = [
 ];
     return(
         <div>
-        <div className="publication-grid">
+        <div className="team-grid">
         <div className="grid-text">
           <div className="publication-header" style={{ fontSize:"50px"}}>
             Team

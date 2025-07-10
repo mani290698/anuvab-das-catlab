@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: rgb(173, 196, 221);
+  background-color: rgb(71, 100, 133);
   color: black;
-  padding: 1rem;
+  padding: 30px;
   width: 100%;
   flex-wrap: wrap;
   margin-top: 2px;

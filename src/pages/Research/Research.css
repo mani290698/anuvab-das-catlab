@@ -8,7 +8,6 @@
   gap: 20px;
   max-width: 1500px;
   background-size: contain;
-  margin: auto;
   flex-wrap: wrap;
   color: black;
   font-size: larger;
@@ -27,4 +26,19 @@
     background-position: center;
     background-attachment: fixed;
     background-position: 0 -650px;
+}
+
+@media screen and (max-width: 768px) {
+  .research-grid{
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+    min-height: 50vh;
+    gap: 1rem;
+    background-image: url('../../assets/images/Research.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-position: 0 50px;
+}
 }

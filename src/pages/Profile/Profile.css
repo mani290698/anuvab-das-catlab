@@ -121,7 +121,7 @@ a {
 }
 
 a:hover {
-  transform: scale(1.05);    /* Zoom in slightly */
+  transform: scale(1.02);    /* Zoom in slightly */
   color: #007BFF;         /* Optional: change color on hover */
 }
 

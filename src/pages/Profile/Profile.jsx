@@ -48,7 +48,7 @@ const FullProfile = () => {
         ],
         awards: [
             { name: "Reaxys PhD Prize Finalist", year: "2020" },
-            { name: "70 th Lindau Nobel Laureate Meeting", year: "2020" },
+            { name: "70th Lindau Nobel Laureate Meeting", year: "2020" },
             { name: "Dr. Judith Edmiston Mentoring Award", year: "2020" },
             { name: "Martin Donald Corera Memorial Endowed Fund", year: "2019" },
         ]
@@ -71,7 +71,8 @@ const FullProfile = () => {
                                     alt="Twitter"
                                     style={{ width: "24px", height: "24px" }}
                                 />
-                                <a href="https://x.com/anuvab_chem">
+                                <a href="https://x.com/anuvab_chem" target="_blank"
+                        rel="noopener noreferrer">
                                 <span style={{ color: "white" }}>anuvab_chem</span></a>
                             </div>
                             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
@@ -80,7 +81,8 @@ const FullProfile = () => {
                                     alt="Linkedin"
                                     style={{ width: "24px", height: "24px" }}
                                 />
-                                <a href="https://www.linkedin.com/in/anuvab-das-7a191436/">
+                                <a href="https://www.linkedin.com/in/anuvab-das-7a191436/" target="_blank"
+                        rel="noopener noreferrer">
                                 <span style={{ color: "white" }}>anuvab-chem</span></a>
                                 
                             </div>
@@ -90,7 +92,8 @@ const FullProfile = () => {
                                     alt="Bluesky"
                                     style={{ width: "24px", height: "24px" }}
                                 />
-                                <a href="https://bsky.app/profile/anuvab-chem.bsky.social">
+                                <a href="https://bsky.app/profile/anuvab-chem.bsky.social" target="_blank"
+                        rel="noopener noreferrer">
                                 <span style={{ color: "white" }}>anuvab-das</span></a>
                             
                             </div>
@@ -134,9 +137,9 @@ const FullProfile = () => {
                 <div className="section" style={{ fontSize: "large" }}>
                     <h2 style={{ fontSize: "2rem" }}>Education</h2>
                     {profile.education.map((edu, idx) => (
-                        <div key={idx} className="entry" style={{ fontSize: "1.25rem" }}>
-                            <div className="left">{edu.label}</div>
-                            <div className="middle" style={{ fontSize: "1.25rem" }}>
+                        <div key={idx} className="entry" style={{ fontSize: "1.25rem", marginLeft:"10px" }}>
+                            <div className="left" style={{ fontSize: "clamp(1rem, 2.5vw, 1.25rem)" }}>{edu.label}</div>
+                            <div className="middle" style={{ fontSize: "clamp(1rem, 2.5vw, 1.25rem)" }}>
                                 <strong>{edu.institution}</strong>
                                 {edu.description && <div>{edu.description}</div>}
                                 {edu.advisor && (
@@ -146,7 +149,7 @@ const FullProfile = () => {
                                     </em>
                                 )}
                             </div>
-                            <div className="right" style={{ fontSize: "1.25rem" }}>{edu.year}</div>
+                            <div className="right" style={{ fontSize: "clamp(1rem, 2.5vw, 1.25rem)" }}>{edu.year}</div>
                         </div>
                     ))}
                 </div>
@@ -156,7 +159,7 @@ const FullProfile = () => {
                     <h2>Experience</h2>
                     {profile.experience.map((exp, idx) => (
                         <div key={idx} className="entry single-line">
-                            <div className="middle" style={{ fontSize: "1.25rem" }}>
+                            <div className="middle" style={{ fontSize: "clamp(1rem, 2.5vw, 1.25rem)", marginLeft:"10px" }}>
                                 <strong>{exp.role}</strong>
                                 <div>{exp.institution}</div>
                             </div>
@@ -168,7 +171,7 @@ const FullProfile = () => {
                 <div className="section">
                     <h2>Honors & Awards</h2>
                     {profile.awards.map((award, idx) => (
-                        <div key={idx} className="entry single-line" style={{ fontSize: "1.25rem" }}>
+                        <div key={idx} className="entry single-line" style={{ fontSize: "1.25rem", marginLeft:"10px"  }}>
                             <div className="middle" style={{ fontSize: "1.25rem" }}>{award.name}</div>
                             <div className="right" style={{ fontSize: "1.25rem" }}>{award.year}</div>
                         </div>

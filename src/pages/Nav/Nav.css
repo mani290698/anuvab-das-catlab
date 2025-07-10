@@ -22,6 +22,10 @@
   transition: background-color 0.3s ease;
 }
 
+.navbar-toggler-icon {
+  filter: invert(1); /* white */
+}
+
 /* Animated underline effect on hover */
 .navbar-nav .nav-link::after {
   content: "";
