@@ -212,7 +212,6 @@
 
 .publications:hover .card {
   filter: blur(4px);
-  transition: filter 0.5s ease;
 }
 
 .card {

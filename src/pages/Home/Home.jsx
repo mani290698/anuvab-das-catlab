@@ -129,8 +129,8 @@ useEffect(() => {
           News & Updates
         </div>
         <div  style={{display: "flex", flexDirection: "column", justifyContent:"left", fontSize:"24px", marginTop:"-30px", marginLeft:"0px", color:"white"}}>
-          <p><strong>August 2025</strong>: xx, xx, and xx join as the founding members of the Das Lab</p>
-          <p><strong>March 2025</strong>: Anuvab officially starts at Nanyang Technological University!</p>
+          <p style={{marginLeft:"30px"}}><strong>August 2025</strong>: xx, xx, and xx join as the founding members of the Das Lab</p>
+          <p style={{marginLeft:"30px"}}><strong>March 2025</strong>: Anuvab officially starts at Nanyang Technological University!</p>
         </div>
       </div>
 

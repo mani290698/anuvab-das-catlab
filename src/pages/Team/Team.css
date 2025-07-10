@@ -1,9 +1,9 @@
 .team-profile-section {
   padding: 2rem;
-  /* max-width: 1200px; */
+  max-width: 1200px;
   margin: 0 auto;
-  /* align-items: center;
-  justify-content: center; */
+  align-items: center;
+  justify-content: center;
   text-align: center;
    display: flex;
   flex-direction: column;
@@ -28,7 +28,13 @@
 
 .team-members-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   justify-items: center;
+}
+
+@media (max-width: 768px) {
+  .team-members-grid {
+    grid-template-columns: 1fr; /* 1 card per row on mobile */
+  }
 }

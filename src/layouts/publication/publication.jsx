@@ -25,7 +25,7 @@ function Publication({ image, title, author, journal,date, articleLink }) {
 
       <p className="tile-date" style={{marginTop:"40px"}}>
         <i className="fas fa-calendar-alt" style={{marginRight:"20px"}}></i>
-        <a href={articleLink}><span> <strong>{date}</strong></span></a>
+        <a href={articleLink} target="_blank"  rel="noopener noreferrer"><span> <strong>{date}</strong></span></a>
       </p>
 
     </div>

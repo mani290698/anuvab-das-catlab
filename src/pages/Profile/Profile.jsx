@@ -2,9 +2,9 @@ import React from "react";
 import "./Profile.css";
 import proteinImg from '../../assets/images/Logo.jpg';
 import headshot from '../../assets/images/Headshot.jpg';
-import twitter from '../../assets/images/Twitter_Logo.png';
-import linkedin from '../../assets/images/linkedin1.png';
-import bluesky from '../../assets/images/Bluesky_Logo.jpg';
+import twitter from '../../assets/images/Twitter logo.jpg';
+import linkedin from '../../assets/images/Linkedin logo.jpg';
+import bluesky from '../../assets/images/Bluesky logo.jpg';
 // import Cv from '../../data/CV.pdf';
 
 const FullProfile = () => {
@@ -66,34 +66,37 @@ const FullProfile = () => {
                         <br></br>
                         <div style={{ display: "flex", flexDirection: "column", gap: "15px", marginTop: "10px", justifyContent: "center" }}>
                             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                                <img
+                               
+                                <a href="https://x.com/anuvab_chem" target="_blank"
+                        rel="noopener noreferrer">
+                             <img
                                     src={twitter}// Replace with your actual image path
                                     alt="Twitter"
                                     style={{ width: "24px", height: "24px" }}
-                                />
-                                <a href="https://x.com/anuvab_chem" target="_blank"
-                        rel="noopener noreferrer">
+                                />&nbsp;
                                 <span style={{ color: "white" }}>anuvab_chem</span></a>
                             </div>
                             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                                <img
+                                
+                                <a href="https://www.linkedin.com/in/anuvab-das-7a191436/" target="_blank"
+                        rel="noopener noreferrer">
+                            <img
                                     src={linkedin}// Replace with your actual image path
                                     alt="Linkedin"
                                     style={{ width: "24px", height: "24px" }}
-                                />
-                                <a href="https://www.linkedin.com/in/anuvab-das-7a191436/" target="_blank"
-                        rel="noopener noreferrer">
+                                />&nbsp;
                                 <span style={{ color: "white" }}>anuvab-chem</span></a>
                                 
                             </div>
                             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                                <img
+                               
+                                <a href="https://bsky.app/profile/anuvab-chem.bsky.social" target="_blank"
+                        rel="noopener noreferrer">
+                             <img
                                     src={bluesky}// Replace with your actual image path
                                     alt="Bluesky"
                                     style={{ width: "24px", height: "24px" }}
-                                />
-                                <a href="https://bsky.app/profile/anuvab-chem.bsky.social" target="_blank"
-                        rel="noopener noreferrer">
+                                />&nbsp;
                                 <span style={{ color: "white" }}>anuvab-das</span></a>
                             
                             </div>
@@ -156,7 +159,7 @@ const FullProfile = () => {
 
 
                 <div className="section">
-                    <h2>Experience</h2>
+                    <h2>Professional Appointment</h2>
                     {profile.experience.map((exp, idx) => (
                         <div key={idx} className="entry single-line">
                             <div className="middle" style={{ fontSize: "clamp(1rem, 2.5vw, 1.25rem)", marginLeft:"10px" }}>

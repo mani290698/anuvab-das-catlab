@@ -23,15 +23,17 @@
   display: flex;
   flex-wrap: wrap; /* Wrap on smaller screens */
   gap: 2rem;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .joinus-tab {
   flex: 1 1 30%; /* Grow, shrink, and base width */
-  background-color: #f8f8f8;
+  background-color: white;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  justify-items: center;
+  justify-content: center;
   min-width: 280px; /* Prevents squashing on narrow screens */
 }
 

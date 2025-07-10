@@ -5,12 +5,12 @@ const MemberCard = ({ image, name, designation, email, education,country }) => {
   return (
     <div className="member-card">
   {/* Profile Image with Flag Badge (Bottom-Right) */}
-  <div className="position-relative d-inline-block mb-3" style={{ width: '160px', height: '160px' }}>
+  <div className="position-relative d-inline-block mb-3" style={{ width: '180px', height: '180px' }}>
     <img
       src={image}
       alt={name}
       className="rounded-circle img-fluid border border-white shadow"
-      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+      style={{ width: '100%', height: '100%', objectFit: 'contain' }}
     />
     <img
       src={country} // Replace with appropriate flag
@@ -22,7 +22,7 @@ const MemberCard = ({ image, name, designation, email, education,country }) => {
 
   {/* Member Info */}
   <h3 className="member-name">
-    {name} <i className="fab fa-twitter"></i>
+    {name}
   </h3>
   <p className="member-pronouns">{designation}</p>
   <a href={`mailto:${email}`} className="member-email">

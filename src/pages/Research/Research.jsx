@@ -1,6 +1,7 @@
 import "../Research/Research.css";
 import React, { useEffect, useState, useRef } from "react";
 import research from '../../assets/images/Research.jpg';
+import researchPic from '../../assets/images/researchPaper1.png';
 
 function Research() {
     return (
@@ -13,10 +14,13 @@ function Research() {
                 </div>
                 <div />
                 </div>
-                <div className="team-profile-section">
+               
       
-                <div className="research-tab" style={{textAlign:"justify", fontSize:"22px"}}>
-                    Chemical catalysis lies at the heart of many unmet challenges in synthetic chemistry and
+                <div className="research-tab">
+                    <div className="research-image">
+                        <img src={researchPic}/>
+                    </div>
+                    <div>Chemical catalysis lies at the heart of many unmet challenges in synthetic chemistry and
                     small-molecule activation. Enzymes, nature’s catalysts, can perform extraordinary
                     transformations and allow living organisms to construct complex molecules from simple
                     precursors. Through natural evolution, a vast array of highly precise and efficient enzymes
@@ -31,10 +35,11 @@ function Research() {
                     and stereoselectivity of chemical reactions. To achieve this, lab members will employ tools
                     from synthetic chemistry, molecular biology, structural biology, and various spectroscopic
                     techniques to advance sustainable catalysis and elucidate the structures of reactive
-                    bioinorganic fragments.
+                    bioinorganic fragments.</div>
+                    
                     <br></br>
-                    <a href="/join-us" > <strong>If our research sparks your interest, come join us!</strong></a>
-                </div>
+                    <div style={{ display: "flex", justifyContent: "center" }}><a href="/join-us" > <strong>If our research sparks your interest, come join us!</strong></a></div>
+                    
             </div>
             </div>
     )

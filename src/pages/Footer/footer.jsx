@@ -1,9 +1,9 @@
 import "../Footer/footer.css";
 import lablogo from '../../assets/images/LogoFooter.jpg'
 import NTU from '../../assets/images/NTU1.jpg'
-import twitter from '../../assets/images/Twitter_Logo.png';
-import linkedin from '../../assets/images/linkedin1.png';
-import bluesky from '../../assets/images/Bluesky_Logo.jpg';
+import twitter from '../../assets/images/Twitter logo.jpg';
+// import linkedin from '../../assets/images/linkedin1.png';
+import bluesky from '../../assets/images/Bluesky logo.jpg';
 
 function Footer() {
     return (

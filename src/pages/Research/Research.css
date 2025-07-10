@@ -1,6 +1,6 @@
 .research-tab{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.432);
@@ -11,8 +11,13 @@
   flex-wrap: wrap;
   color: black;
   font-size: larger;
-  justify-content: center;
+  justify-self: center;
   animation: fadeIn 1s ease-in-out forwards;
+  justify-content: center;
+  justify-items: center;
+  text-align: justify;
+  font-size: 22px;
+  margin: 30px;
 }
 
 .research-grid{
@@ -41,4 +46,18 @@
     /* background-attachment: fixed; */
     background-position: 0 50px;
 }
+}
+
+.research-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.research-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
 }

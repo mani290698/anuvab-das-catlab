@@ -1,4 +1,4 @@
-import proteinImg from '../assets/images/jpggg.webp';
+
 const publicationPapers = [
   // {
   //   id: 1,
@@ -109,8 +109,8 @@ const mentoredPaper = {
       perspective: "<a href='https://www.science.org/content/blog-post/zapping-amine-groups' target='_blank'>‘Zapping In Amine Groups’</a> by Derek Lowe",
 
       highlights: [
-        "<a href='https://www.thieme-connect.de/products/ejournals/abstract/10.1055/s-0042-1760094' target='_blank'>Synfacts 2023, 19, 81</a>",
-        "<a href='https://www.cell.com/chem-catalysis/fulltext/S2667-1093(22)00502-9' target='_blank'>Chem Catal. 2022, 2, 3287</a>"
+        "<a href='https://www.thieme-connect.de/products/ejournals/abstract/10.1055/s-0042-1760094' target='_blank'><em>Synfacts</em> <strong>2023</strong>, <em>19</em>, 81</a>",
+        "<a href='https://www.cell.com/chem-catalysis/fulltext/S2667-1093(22)00502-9' target='_blank'><em>Chem Catal.</em> <strong>2022</strong>, <em>2</em>, 3287</a>"
       ]
     },
     {
@@ -144,7 +144,7 @@ const mentoredPaper = {
       journal: "<em>J. Am. Chem. Soc.</em> <strong>2020</strong>, <em>142</em>, 19862–19867.",
       link: "https://pubs.acs.org/doi/abs/10.1021/jacs.0c09842",
       highlights:[
-        "<a href='https://www.nature.com/articles/s41570-020-00243-4' target='_blank'>Nat. Rev. Chem. 2021, 5, 2</a>",
+        "<a href='https://www.nature.com/articles/s41570-020-00243-4' target='_blank'><em>Nat. Rev. Chem.</em> <strong>2021</strong>, <em>5</em>, 2</a>",
       ]
     },
     {
@@ -211,7 +211,7 @@ const recentPublication = [
   {
     id: 1,
     title: "Reaction Discovery Using Spectroscopic Insights from an Enzymatic C–H Amination Intermediate",
-    author: "Das, A.; <sup>†</sup> Gao, S.; <sup>†</sup> Lal, R. G.; Hicks, M. H.; Oyala, P. H.; Arnold, F. H.",
+    author: "Das, A.; † Gao, S.; † Lal, R. G.; Hicks, M. H.; Oyala, P. H.; Arnold, F. H.",
     journal: "J. Am. Chem. Soc. 2024,146, 20556–20562.",
     date: "10.1021/jacs.4c05761",
     article: "https://pubs.acs.org/doi/abs/10.1021/jacs.4c05761"

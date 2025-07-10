@@ -2,7 +2,8 @@ import "../Team/Team.css";
 import React, { useEffect, useState, useRef } from "react";
 import ProfileCard from '../../layouts/team/profilecard'
 import MemberCard from "../../layouts/team/membercard";
-import profileImg from '../../assets/images/Logo.jpg'
+import grad from '../../assets/images/Grad pic.jpg'
+import undergrad from '../../assets/images/Undergrad pic.jpg'
 
 function Team(){
 
@@ -28,65 +29,36 @@ function Team(){
 
 const teamMembers = [
   {
-    name: "Yi Liu",
-    designation: "Undergrad",
-    email: "yl4431@princeton.edu",
-    image: profileImg,
+    name: "Peiyu Yi",
+    designation: "Graduate",
+    email: "PEIYU003@e.ntu.edu.sg",
+    image: grad,
     education: [
-      { degree: "M.S. Memorial University", advisor: "Christopher M. Kozak" },
-      { degree: "Ph.D. McGill University", advisor: "Bruce A. Arndtsen" },
+      { degree: "B.S./M.S. Dalian University of Technology", advisor: "Qingwei Meng" },
     ],
      country:"https://flagcdn.com/w40/cn.png"
   },
   {
-    name: "Yi Liu",
-    designation: "she/her",
-    email: "yl4431@princeton.edu",
-    image: profileImg,
+    name: "Soumen Ghosh",
+    designation: "Graduate",
+    email: "SOUMEN002@e.ntu.edu.sg",
+    image: grad,
     education: [
-      { degree: "M.S. Memorial University", advisor: "Christopher M. Kozak" },
-      { degree: "Ph.D. McGill University", advisor: "Bruce A. Arndtsen" },
-    ],
-     country:"https://flagcdn.com/w40/fr.png"
-  },
-  {
-    name: "Yi Liu",
-    designation: "she/her",
-    email: "yl4431@princeton.edu",
-    image: profileImg,
-    education: [
-      { degree: "M.S. Memorial University", advisor: "Christopher M. Kozak" },
-      { degree: "Ph.D. McGill University", advisor: "Bruce A. Arndtsen" },
-    ],
-    country:"https://flagcdn.com/w40/ru.png"
-  },
-  {
-    name: "Prasun Mukherjee",
-    designation: "Undergrad",
-    email: "pm2972@princeton.edu",
-    image: profileImg,
-    education: [
-      { degree: "Ph.D. University of Calcutta", advisor: "Asish R. Das" },
-      {
-        degree: "Postdoctoral Fellow IIT Bombay",
-        advisor: "Debabrata Maiti",
-      },
+      { degree: "M.S. Indian Institute of Technology, Guwahati", advisor: "Dipankar Srimani" }
     ],
      country:"https://flagcdn.com/w40/in.png"
   },
   {
-    name: "Alexandra Brown",
-    designation: "she/her",
-    email: "ab5453@princeton.edu",
-    image: profileImg,
+    name: "Shreyansh Daga",
+    designation: "Undergraduate",
+    email: "DAGA0002@e.ntu.edu.sg",
+    image: undergrad,
     education: [
-      {
-        degree: "Ph.D. Massachusetts Institute of Technology",
-        advisor: "Daniel Suess",
-      },
+      { degree: "B.S. Nanyang Technological University", advisor: "Christopher M. Kozak" }
     ],
-     country:"https://flagcdn.com/w40/us.png"
+    country:"https://flagcdn.com/w40/in.png"
   },
+ 
 ];
     return(
         <div>
