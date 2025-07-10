@@ -22,15 +22,15 @@ function Publications() {
         <div className="header mentored-header">
           Independent Work
           <div className="mentored-line" /><br></br>
-          <div style={{ justifySelf: "center" }}>Coming Soon...</div>
+          <div style={{ display:"grid",justifySelf: "center" }}>Coming Soon...</div>
 
         </div>
 
         {(publications.publicationPapers.length > 0) && (
           <>
-            <div className="header mentored-header">
+            {/* <div className="header mentored-header">
               <u>Independent Work</u>
-            </div>
+            </div> */}
 
             <div className="all-publications">
               {publications.publicationPapers.map(publicationData => (
