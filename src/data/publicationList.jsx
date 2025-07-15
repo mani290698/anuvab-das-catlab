@@ -139,7 +139,7 @@ const mentoredPaper = {
     },
     {
       index: 9,
-      title: "In Crystallo Snapshots of Rh₂-Catalyzed C–H Amination.",
+      title: "<em>In Crystallo</em> Snapshots of Rh₂-Catalyzed C–H Amination.",
       authors: "Das, A.; Wang, C.-H.; Van Trieste III, G. P.; Sun, C.-J.; Chen, Y.-S.; Reibenspies, J. H.; Powers, D. C.",
       journal: "<em>J. Am. Chem. Soc.</em> <strong>2020</strong>, <em>142</em>, 19862–19867.",
       link: "https://pubs.acs.org/doi/abs/10.1021/jacs.0c09842",

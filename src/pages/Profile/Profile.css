@@ -64,6 +64,7 @@
   .hero-content {
     flex-direction: column;
     text-align: center;
+    max-width: 100%;
   }
 
   .bio-text {

@@ -20,14 +20,14 @@
 .resource-grid {
  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
-  min-height: 50vh;
+  min-height: 40vh;
   gap: 1rem;
   background-image: url('../../assets/images/Resource.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-position-y: 19%;
+  background-position-y: 15%;
   animation: fadeIn 1s ease-in-out forwards;
 }
 

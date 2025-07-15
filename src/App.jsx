@@ -1,4 +1,4 @@
-import { React, useEffect } from "react";
+import { React, useEffect,useRef } from "react";
 import { BrowserRouter as Router, useLocation ,Routes, Route } from "react-router-dom";
 import AppRouter from "./routes/AppRouter.jsx";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
@@ -23,15 +23,18 @@ function App() {
 
 function PageTransition() {
   const location = useLocation(); // useLocation hook is now inside the Router
+    const nodeRef = useRef(null); // Create ref
+
 
   return (
     <TransitionGroup component={null}>
       <CSSTransition
         key={location.pathname} // Ensure each transition is unique using location.key
         timeout={500} // Set the transition duration (500ms)
-        classNames="page-fade" // The CSS class name for the transition
+        classNames="page-fade"
+        nodeRef={nodeRef} // The CSS class name for the transition
       >
-        <div className="route-wrapper">
+       
           <Routes location={location}>
             <Route path="/" element={<Home />} />
             <Route path="/join-us" element={<JoinUs />} />
@@ -41,7 +44,7 @@ function PageTransition() {
             <Route path="/anuvab" element={<FullProfile />} />
             <Route path="/resources" element={<Resource />} />
           </Routes> 
-        </div>
+
       </CSSTransition>
     </TransitionGroup>
   );

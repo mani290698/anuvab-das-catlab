@@ -22,7 +22,14 @@ function Publications() {
         <div className="header mentored-header">
           Independent Work
           <div className="mentored-line" /><br></br>
-          <div style={{ display:"grid",justifySelf: "center" }}>Coming Soon...</div>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            height: '100px', // or any height you want
+          }}>
+            <div>Coming Soon...</div>
+          </div>
 
         </div>
 
@@ -51,11 +58,11 @@ function Publications() {
           <div className="mentored-line" />
         </div>
         <div className="all-publications">
-          <div style={{ display:"flex",justifyItems: "center", fontSize:  "clamp(1.5rem, 2vw, 1.5rem)",justifyContent:"center" }}>  <strong>At California Institute of Technology</strong></div>
-          <div className="mx-0" style={{fontSize:  "clamp(1rem, 2vw, 1.2rem)", textAlign: "justify",justifySelf:"left" }}>
+          <div style={{ display: "flex", justifyItems: "center", fontSize: "clamp(1.5rem, 2vw, 1.5rem)", justifyContent: "center" }}>  <strong>At California Institute of Technology</strong></div>
+          <div className="mx-0" style={{ fontSize: "clamp(1rem, 2vw, 1.2rem)", textAlign: "justify", justifySelf: "left" }}>
 
             {publications.mentoredPaper.cali.map(publicationData => (
-              <div  key={publicationData.id}>
+              <div key={publicationData.id}>
                 <PublicationItem
                   index={publicationData.index}
                   title={publicationData.title}
@@ -69,11 +76,11 @@ function Publications() {
               </div>
             ))}
           </div>
-          <div style={{ display:"flex",justifyContent:"center", fontSize:  "clamp(1.5rem, 2vw, 1.5rem)" }}> <strong>At Texas A&M University</strong></div>
-           <div className="mx-0" style={{fontSize:  "clamp(1rem, 2vw, 1.2rem)", textAlign: "justify",justifySelf:"left" }}>
+          <div style={{ display: "flex", justifyContent: "center", fontSize: "clamp(1.5rem, 2vw, 1.5rem)" }}> <strong>At Texas A&M University</strong></div>
+          <div className="mx-0" style={{ fontSize: "clamp(1rem, 2vw, 1.2rem)", textAlign: "justify", justifySelf: "left" }}>
 
             {publications.mentoredPaper.texas.map(publicationData => (
-              <div  key={publicationData.id}>
+              <div key={publicationData.id}>
                 <PublicationItem
                   index={publicationData.index}
                   title={publicationData.title}
@@ -86,11 +93,11 @@ function Publications() {
               </div>
             ))}
           </div>
-          <div style={{ display:"flex",justifyContent:"center", fontSize:  "clamp(1.5rem, 2vw, 1.5rem)" }}> <strong>At IIT Kharagpur</strong></div>
-         <div  className="mx-0" style={{fontSize:  "clamp(1rem, 2vw, 1.2rem)", textAlign: "justify",justifySelf:"left",width:"100%" }}>
+          <div style={{ display: "flex", justifyContent: "center", fontSize: "clamp(1.5rem, 2vw, 1.5rem)" }}> <strong>At IIT Kharagpur</strong></div>
+          <div className="mx-0" style={{ fontSize: "clamp(1rem, 2vw, 1.2rem)", textAlign: "justify", justifySelf: "left", width: "100%" }}>
 
             {publications.mentoredPaper.kharagpur.map(publicationData => (
-              <div  key={publicationData.id}>
+              <div key={publicationData.id}>
                 <PublicationItem
                   index={publicationData.index}
                   title={publicationData.title}

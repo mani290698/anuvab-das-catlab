@@ -17,10 +17,10 @@ function Research() {
                
       
                 <div className="research-tab">
-                    <div className="research-image">
+                    <div className="research-image" style={{marginBottom:"5px"}}>
                         <img src={researchPic}/>
                     </div>
-                    <div>Chemical catalysis lies at the heart of many unmet challenges in synthetic chemistry and
+                    <div style={{fontSize: "clamp(1rem, 2vw, 1.2rem)"}}>Chemical catalysis lies at the heart of many unmet challenges in synthetic chemistry and
                     small-molecule activation. Enzymes, nature’s catalysts, can perform extraordinary
                     transformations and allow living organisms to construct complex molecules from simple
                     precursors. Through natural evolution, a vast array of highly precise and efficient enzymes
@@ -37,12 +37,12 @@ function Research() {
                     techniques to advance sustainable catalysis and elucidate the structures of reactive
                     bioinorganic fragments.</div>
                     
-                    <br></br>
-                    <div style={{ display: "flex", justifyContent: "center" }}><a href="/join-us" > <strong>If our research sparks your interest, come join us!</strong></a></div>
+        
+                    <div style={{ display: "flex", justifyContent: "center",fontSize: "clamp(1rem, 2vw, 1.2rem)" }}><a href="/join-us" > <strong>If our research sparks your interest, come join us!</strong></a></div>
                     
             </div>
             </div>
     )
 }
 
-export default Research;
+export default Research; 

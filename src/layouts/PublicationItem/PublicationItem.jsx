@@ -7,7 +7,7 @@ const PublicationItem = ({ index, title, authors, journal, link, perspective, hi
         {index})
       </div>
       <div>
-        <div className="fw-bold"  style={{ wordWrap: 'break-word', overflowWrap: 'break-word', minWidth: 0 }}>{title}</div>
+        <div className="fw-bold"  style={{ wordWrap: 'break-word', overflowWrap: 'break-word', minWidth: 0 }}><span dangerouslySetInnerHTML={{ __html: title }} />{' '}</div>
 
         {/* Authors and journal */}
         <div>

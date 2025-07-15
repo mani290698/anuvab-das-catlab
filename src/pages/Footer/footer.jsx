@@ -17,26 +17,26 @@ function Footer() {
                     <img src={lablogo} style={{ height: '60px', width: 'auto', marginBottom: "20px" }} />
                     <a href="https://mail.google.com/mail/?view=cm&to=anuvab.das@ntu.edu.sg"
                         target="_blank"
-                        rel="noopener noreferrer"><h5 style={{color:"black",marginBottom: "20px",fontStyle:"italic" }}>anuvab.das@ntu.edu.sg</h5></a>
+                        rel="noopener noreferrer"><h5 style={{ color: "black", marginBottom: "20px", fontStyle: "italic" }}>anuvab.das@ntu.edu.sg</h5></a>
                     <div style={{ display: "flex", alignItems: "center", marginBottom: "20px" }}>
-                        
+
                         <a href=" https://x.com/Das_ChemLab" target="_blank"
-                        rel="noopener noreferrer"> <img
-                            src={twitter}// Replace with your actual image path
-                            alt="Twitter"
-                            style={{ width: "26px", height: "26px" }}
-                        />&nbsp;
-                            <span style={{ color: "black", fontSize: "1.2rem", fontWeight: "500",fontStyle:"italic"}}>Das_ChemLab</span></a>
+                            rel="noopener noreferrer"> <img
+                                src={twitter}// Replace with your actual image path
+                                alt="Twitter"
+                                style={{ width: "30px", height: "30px" }}
+                            />&nbsp;
+                            <span style={{ color: "black", fontSize: "1.2rem", fontWeight: "500", fontStyle: "italic" }}>Das_ChemLab</span></a>
                     </div>
                     <div style={{ display: "flex", alignItems: "center" }}>
-                        
+
                         <a href="https://bsky.app/profile/das-lab.bsky.social" target="_blank"
-                        rel="noopener noreferrer"><img
-                            src={bluesky}// Replace with your actual image path
-                            alt="Bluesky"
-                            style={{ width: "26px", height: "26px" }}
-                        /> &nbsp;
-                            <span style={{ color: "black", fontSize: "1.2rem", fontWeight: "500",fontStyle:"italic"}}>das-lab</span></a>
+                            rel="noopener noreferrer"><img
+                                src={bluesky}// Replace with your actual image path
+                                alt="Bluesky"
+                                style={{ width: "30px", height: "30px" }}
+                            /> &nbsp;
+                            <span style={{ color: "black", fontSize: "1.2rem", fontWeight: "500", fontStyle: "italic" }}>das-lab</span></a>
 
                     </div>
 
@@ -48,6 +48,19 @@ function Footer() {
                     <h5>Singapore 637371</h5>
 
                 </div>
+                {/* <div className="bubbles">
+                    {[...Array(20)].map((_, i) => {
+                        const size = ['small', 'medium', 'large'][Math.floor(Math.random() * 3)];
+                        const speed = ['slow', 'normal', 'fast'][Math.floor(Math.random() * 3)];
+                        return (
+                            <span
+                                key={i}
+                                className={`${size} ${speed}`}
+                                style={{ '--i': i + 1 }}
+                            ></span>
+                        );
+                    })}
+                </div> */}
             </div>
         </div>
     )

@@ -106,7 +106,7 @@ const FullProfile = () => {
                     <div className="bio-text">
                         <h1>Anuvab Das</h1>
                         <div className="green-line" />
-                        <p style={{ textAlign: "justify" }}>
+                        <p style={{ textAlign: "justify",hyphens:"auto" }}>
                             Born and raised in Kolkata, Anuvab obtained his B.Sc. degree from Presidency College in
                             2013. During his undergraduate studies, he gained his first research experience in Prof.
                             Abhishek Dey’s lab at the Indian Association for the Cultivation of Science, where he studied
@@ -115,7 +115,7 @@ const FullProfile = () => {
                             research in Prof. Jayanta K. Ray’s lab, where he developed a new generation of palladium
                             catalysts for annulation reactions.
                         </p>
-                        <p style={{ textAlign: "justify" }}>
+                        <p style={{ textAlign: "justify",hyphens:"auto" }}>
                             In 2015, Anuvab moved to Texas A&M University to pursue his Ph.D. under the guidance of
                             Prof. David C. Powers. His graduate research focused on structurally characterizing transient
                             intermediates involved in nitrene transfer reactions using in situ crystallography. After
@@ -124,7 +124,7 @@ const FullProfile = () => {
                             amination reactions by engineering heme proteins using directed evolution and
                             spectroscopically characterizing the intermediates involved.
                         </p>
-                        <p style={{ textAlign: "justify" }}>
+                        <p style={{ textAlign: "justify",hyphens:"auto" }}>
                             In 2025, Anuvab joined the School of Chemistry, Chemical Engineering, and Biotechnology
                             at Nanyang Technological University as an Assistant Professor.
                         </p>
@@ -166,7 +166,7 @@ const FullProfile = () => {
                                 <strong>{exp.role}</strong>
                                 <div>{exp.institution}</div>
                             </div>
-                            <div className="right" style={{ fontSize: "1.25rem" }}>{exp.year}</div>
+                            <div className="right" style={{ fontSize: "clamp(1rem, 2.5vw, 1.25rem)"}}>{exp.year}</div>
                         </div>
                     ))}
                 </div>
@@ -175,8 +175,8 @@ const FullProfile = () => {
                     <h2>Honors & Awards</h2>
                     {profile.awards.map((award, idx) => (
                         <div key={idx} className="entry single-line" style={{ fontSize: "1.25rem", marginLeft:"10px"  }}>
-                            <div className="middle" style={{ fontSize: "1.25rem" }}>{award.name}</div>
-                            <div className="right" style={{ fontSize: "1.25rem" }}>{award.year}</div>
+                            <div className="middle" style={{ fontSize: "clamp(1rem, 2.5vw, 1.25rem)" }}>{award.name}</div>
+                            <div className="right" style={{ fontSize: "clamp(1rem, 2.5vw, 1.25rem)" }}>{award.year}</div>
                         </div>
                     ))}
                 </div>

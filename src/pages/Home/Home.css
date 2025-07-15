@@ -10,6 +10,7 @@
   background-position: center;
   background-attachment: fixed;
   z-index: 1;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .slideshow-background {
@@ -198,6 +199,7 @@
   z-index: 1;
   background-color: #222831ee;
   margin-top: 2px;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .publications {

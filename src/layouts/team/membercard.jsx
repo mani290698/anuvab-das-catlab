@@ -5,12 +5,12 @@ const MemberCard = ({ image, name, designation, email, education,country }) => {
   return (
     <div className="member-card">
   {/* Profile Image with Flag Badge (Bottom-Right) */}
-  <div className="position-relative d-inline-block mb-3" style={{ width: '180px', height: '180px' }}>
+  <div className="position-relative d-inline-block mb-3 mx-auto" style={{ width: '180px', height: '180px' }}>
     <img
       src={image}
       alt={name}
-      className="rounded-circle img-fluid border border-white shadow"
-      style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+      className="rounded-circle img-fluid  shadow"
+      style={{ width: '100%', height: '100%', objectFit: 'contain'}}
     />
     <img
       src={country} // Replace with appropriate flag
@@ -33,7 +33,9 @@ const MemberCard = ({ image, name, designation, email, education,country }) => {
       <div key={index} className="edu-item">
         <strong>{edu.degree}</strong>
         <br />
+        {edu.advisor!="" &&
         <em>Advisor: {edu.advisor}</em>
+}
       </div>
     ))}
   </div>

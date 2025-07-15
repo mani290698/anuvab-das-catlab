@@ -1,7 +1,7 @@
   .publication-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
-    min-height: 50vh;
+    min-height: 40vh;
     gap: 1rem;
     background-image: url('../../assets/images/Publications.jpg');
     background-repeat: no-repeat;
@@ -10,6 +10,7 @@
     background-position-y: 0px;
     background-attachment: fixed;
     /* background-position-y: -15rem; */
+     /* animation: fadeIn 1s ease-in-out forwards; */
   }
 
   .all-publications {

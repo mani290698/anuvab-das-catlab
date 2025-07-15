@@ -89,7 +89,7 @@ useEffect(() => {
       <div className="header" style={{ textAlign: "justify" }}>
         Welcome to the Das Lab
       </div>
-      <div className="para" style={{ textAlign: "justify", marginRight: "10px" }}>
+      <div className="para" style={{ textAlign: "justify", marginRight: "10px",hyphens:"auto" }}>
         We are a multidisciplinary group focused on understanding reaction mechanisms and
         developing sustainable synthetic methods through protein engineering
       </div>
@@ -103,7 +103,7 @@ useEffect(() => {
 </div>
 
       <div className="recent-publications">
-        <div className="header" style={{ marginTop: '20px', fontWeight: '500',fontSize:'40px',color:"white" }}>
+        <div className="header" style={{ marginTop: '20px', fontWeight: '500',fontSize: "clamp(1.5rem, 2vw, 1.5rem)" ,color:"white" }}>
           Recent Publications
         </div>
         <div className="publications">
@@ -125,11 +125,11 @@ useEffect(() => {
         </div>
       </div>
       <div className="news-update">
-        <div className="header" style={{ marginTop: '20px', fontWeight: '500', fontSize:'40px',color:"white" }}>
+        <div className="header" style={{ marginTop: '20px', fontWeight: '500', fontSize: "clamp(1.5rem, 2vw, 1.5rem)",color:"white" }}>
           News & Updates
         </div>
         <div  style={{display: "flex", flexDirection: "column", justifyContent:"left", fontSize:"24px", marginTop:"-30px", marginLeft:"0px", color:"white"}}>
-          <p style={{marginLeft:"30px"}}><strong>August 2025</strong>: xx, xx, and xx join as the founding members of the Das Lab</p>
+          <p style={{marginLeft:"30px"}}><strong>August 2025</strong>: <em>Peiyu Yi</em>, <em>Soumen Ghosh</em> and <em>Shreyansh Daga</em> join as the founding members of the Das Lab</p>
           <p style={{marginLeft:"30px"}}><strong>March 2025</strong>: Anuvab officially starts at Nanyang Technological University!</p>
         </div>
       </div>

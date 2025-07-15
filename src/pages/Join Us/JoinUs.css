@@ -1,7 +1,7 @@
 .joinus-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
-  min-height: 50vh;
+  min-height: 40vh;
   gap: 1rem;
   background-image: url('../../assets/images/Resource.jpg');
   background-repeat: no-repeat;
@@ -9,7 +9,7 @@
   background-position: center;
   background-attachment: fixed;
   background-position-y: 19%;
-  animation: fadeIn 1s ease-in-out forwards;
+  /* animation: fadeIn 1s ease-in-out forwards; */
 }
 
 .joinus-profile-section {
@@ -23,6 +23,7 @@
   display: flex;
   flex-wrap: wrap; /* Wrap on smaller screens */
   gap: 2rem;
+  animation: fadeIn 1s ease-in-out forwards;
   /* justify-content: space-between; */
 }
 

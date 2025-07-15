@@ -2,12 +2,14 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: rgb(71, 100, 133);
+  /* background: linear-gradient(to top right, #00cfff, #0a0033);*/
+  background-color: rgb(122, 173, 194);
   color: black;
   padding: 30px;
   width: 100%;
   flex-wrap: wrap;
   margin-top: 2px;
+  position: relative;
 }
 
 .ntu-logo {
