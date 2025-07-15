@@ -103,7 +103,7 @@ useEffect(() => {
 </div>
 
       <div className="recent-publications">
-        <div className="header" style={{ marginTop: '20px', fontWeight: '500',fontSize: "clamp(1.5rem, 2vw, 1.5rem)" ,color:"white" }}>
+        <div className="header" style={{ marginTop: '20px', fontWeight: '500',fontSize:'40px',color:"white" }}>
           Recent Publications
         </div>
         <div className="publications">
@@ -125,7 +125,7 @@ useEffect(() => {
         </div>
       </div>
       <div className="news-update">
-        <div className="header" style={{ marginTop: '20px', fontWeight: '500', fontSize: "clamp(1.5rem, 2vw, 1.5rem)",color:"white" }}>
+        <div className="header" style={{ marginTop: '20px', fontWeight: '500', fontSize:'40px',color:"white" }}>
           News & Updates
         </div>
         <div  style={{display: "flex", flexDirection: "column", justifyContent:"left", fontSize:"24px", marginTop:"-30px", marginLeft:"0px", color:"white"}}>
