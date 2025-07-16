@@ -228,7 +228,7 @@ const recentPublication = [
     id: 3,
     title: "Enzymatic Assembly of Diverse Lactone Structures: An Intramolecular C–H Functionalization Strategy",
     author: "Wackelin, D. J.; Mao, R.; Sicinski, K. M.; Zhao, Y.; Das, A.; Chen, K.; Arnold, F. H.",
-    journal: "<em>J. Am. Chem. Soc.</em> <strong>2024</strong>,<em>146</em>, 1580–1587",
+    journal: "<em>J. Am. Chem. Soc.</em> <strong>2024</strong>, <em>146</em>, 1580–1587",
     date: "10.1021/jacs.3c11722",
     article: "https://pubs.acs.org/doi/10.1021/jacs.3c11722"
   },
