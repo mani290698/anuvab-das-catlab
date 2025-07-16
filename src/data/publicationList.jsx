@@ -220,7 +220,7 @@ const recentPublication = [
     id: 2,
     title: "Biocatalytic, Enantioenriched Primary Amination of Tertiary C–H Bonds",
     author: "Mao, R.; Gao, S.; Qin, Z.-Y.; Rogge, T.; Wu, S. J.; Li, Z.-Q.; Das, A.; Houk, K. N.; Arnold, F. H.",
-    journal: "<em>Nat. Catal.</em> <strong>2024</strong>, <em>7</em>, 585–592.",
+    journal: "<em>Nat. Catal.</em> <strong>2024</strong>, <em>7</em>,  585–592.",
     date: "10.1038/s41929-024-01149-w",
     article: "https://www.nature.com/articles/s41929-024-01149-w"
   },
