@@ -20,7 +20,7 @@ function Publication({ image, title, author, journal,date, articleLink }) {
 
       <p className="tile-journal" style={{marginTop:"40px"}}>
         <i className="fas fa-book" style={{marginRight:"20px"}}></i>
-        <span> <strong>{journal}</strong></span>
+        <span dangerouslySetInnerHTML={{ __html: journal }} ></span>
       </p>
 
       <p className="tile-date" style={{marginTop:"40px"}}>

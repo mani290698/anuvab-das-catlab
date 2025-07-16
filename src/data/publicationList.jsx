@@ -212,7 +212,7 @@ const recentPublication = [
     id: 1,
     title: "Reaction Discovery Using Spectroscopic Insights from an Enzymatic C–H Amination Intermediate",
     author: "Das, A.; † Gao, S.; † Lal, R. G.; Hicks, M. H.; Oyala, P. H.; Arnold, F. H.",
-    journal: "J. Am. Chem. Soc. 2024,146, 20556–20562.",
+    journal: "<em>J. Am. Chem. Soc.</em> <strong>2024</strong>,<em>146</em>, 20556–20562.",
     date: "10.1021/jacs.4c05761",
     article: "https://pubs.acs.org/doi/abs/10.1021/jacs.4c05761"
   },
@@ -220,7 +220,7 @@ const recentPublication = [
     id: 2,
     title: "Biocatalytic, Enantioenriched Primary Amination of Tertiary C–H Bonds",
     author: "Mao, R.; Gao, S.; Qin, Z.-Y.; Rogge, T.; Wu, S. J.; Li, Z.-Q.; Das, A.; Houk, K. N.; Arnold, F. H.",
-    journal: "J. Am. Chem. Soc. 2024,146, 20556–20562",
+    journal: "<em>J. Am. Chem. Soc.</em> <strong>2024</strong>,<em>146</em>, 20556–20562",
     date: "10.1038/s41929-024-01149-w",
     article: "https://www.nature.com/articles/s41929-024-01149-w"
   },
@@ -228,7 +228,7 @@ const recentPublication = [
     id: 3,
     title: "Enzymatic Assembly of Diverse Lactone Structures: An Intramolecular C–H Functionalization Strategy",
     author: "Wackelin, D. J.; Mao, R.; Sicinski, K. M.; Zhao, Y.; Das, A.; Chen, K.; Arnold, F. H.",
-    journal: "J. Am.Chem. Soc. 2024, 146, 1580–1587",
+    journal: "<em>J. Am. Chem. Soc.</em> <strong>2024</strong>,<em>146</em>, 1580–1587",
     date: "10.1021/jacs.3c11722",
     article: "https://pubs.acs.org/doi/10.1021/jacs.3c11722"
   },
