@@ -4,6 +4,10 @@ import ProfileCard from '../../layouts/team/profilecard'
 import MemberCard from "../../layouts/team/membercard";
 import grad from '../../assets/images/Grad pic.jpg'
 import undergrad from '../../assets/images/Undergrad pic.jpg'
+import shreyansh from '../../assets/images/Shreyansh.jpg'
+import soumen from '../../assets/images/Soumen.jpg'
+import peiyu from '../../assets/images/Peiyu.jpg'
+import jung from '../../assets/images/Jung Wei.png'
 
 function Team() {
 
@@ -32,7 +36,7 @@ function Team() {
       name: "Peiyu Yi",
       designation: "Graduate",
       email: "PEIYU003@e.ntu.edu.sg",
-      image: grad,
+      image: peiyu,
       education: [
         { degree: "B.S./M.S. Dalian University of Technology", advisor: "Qingwei Meng" },
       ],
@@ -42,7 +46,7 @@ function Team() {
       name: "Soumen Ghosh",
       designation: "Graduate",
       email: "SOUMEN002@e.ntu.edu.sg",
-      image: grad,
+      image: soumen,
       education: [
         { degree: "M.S. Indian Institute of Technology, Guwahati", advisor: "Dipankar Srimani" },
          { degree:"B.S. Vidyasagar University", advisor:""}
@@ -53,11 +57,21 @@ function Team() {
       name: "Shreyansh Daga",
       designation: "Undergraduate",
       email: "DAGA0002@e.ntu.edu.sg",
-      image: undergrad,
+      image: shreyansh,
       education: [
         { degree: "B.S. Nanyang Technological University (expected 2027)", advisor: "" }
       ],
       country: "https://flagcdn.com/w40/in.png"
+    },
+    {
+      name: "Jung Wei Ling",
+      designation: "Undergraduate",
+      email: "LING0110@e.ntu.edu.sg",
+      image: jung,
+      education: [
+        { degree: "B.S. Nanyang Technological University (expected 2028)", advisor: "" }
+      ],
+      country: "https://flagcdn.com/w40/cn.png"
     },
 
   ];

@@ -10,7 +10,7 @@ const MemberCard = ({ image, name, designation, email, education,country }) => {
       src={image}
       alt={name}
       className="rounded-circle img-fluid  shadow"
-      style={{ width: '100%', height: '100%', objectFit: 'contain'}}
+      style={{ width: '100%', height: '100%', objectFit: 'cover'}}
     />
     <img
       src={country} // Replace with appropriate flag
