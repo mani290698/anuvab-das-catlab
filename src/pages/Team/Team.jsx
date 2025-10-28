@@ -61,7 +61,7 @@ function Team() {
       education: [
         { degree: "B.S. Nanyang Technological University (expected 2027)", advisor: "" }
       ],
-      country: "https://flagcdn.com/w40/in.png"
+      country: "https://flagcdn.com/w40/sg.png"
     },
     {
       name: "Jung Wei Ling",
@@ -71,7 +71,7 @@ function Team() {
       education: [
         { degree: "B.S. Nanyang Technological University (expected 2028)", advisor: "" }
       ],
-      country: "https://flagcdn.com/w40/cn.png"
+      country: "https://flagcdn.com/w40/sg.png"
     },
 
   ];
